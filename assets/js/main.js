@@ -2,7 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     // Init AOS
-    AOS.init({ duration: 800, easing: 'slide', once: true });
+    // AOS.init({ duration: 800, easing: 'slide', once: true });
+    AOS.init({ duration: 800, easing: 'slide' });
 
     // Init Swiper
     new Swiper(".bannerSwiper", {
@@ -26,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Initialize Header directly since it's now inlined
     initializeHeader();
-    
+
     // Header loading removed
     loadComponent("footer-placeholder", "components/footer.html");
 });
