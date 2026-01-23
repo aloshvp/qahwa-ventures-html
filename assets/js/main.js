@@ -24,7 +24,10 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     };
 
-    loadComponent("header-placeholder", "components/header.html", initializeHeader);
+    // Initialize Header directly since it's now inlined
+    initializeHeader();
+    
+    // Header loading removed
     loadComponent("footer-placeholder", "components/footer.html");
 });
 
