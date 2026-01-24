@@ -8,7 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // Init Swiper
     new Swiper(".bannerSwiper", {
         pagination: { el: ".swiper-pagination", clickable: true },
-        loop: true
+        loop: true,
+        effect: "fade"
     });
 
     // Helper to load components
