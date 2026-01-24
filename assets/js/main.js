@@ -36,9 +36,15 @@ function initializeHeader() {
     // Scroll Logic
     const header = document.getElementById("header");
     if (header) {
-        window.addEventListener("scroll", () =>
-            header.classList.toggle("scrolled", window.scrollY > 50)
-        );
+        const updateHeaderState = () => {
+            header.classList.toggle("scrolled", window.scrollY > 50 || window.innerWidth < 1024);
+        };
+
+        window.addEventListener("scroll", updateHeaderState);
+        window.addEventListener("resize", updateHeaderState);
+
+        // Initial check
+        updateHeaderState();
     }
 
     // Mobile Menu Logic
