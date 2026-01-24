@@ -218,7 +218,7 @@ html{scroll-behavior:smooth}
 /*faq*/
 .faqWrap{padding: 115px 0 130px;background: #000000;}
 .faqItem{color: var(--yellow);border-bottom:1px solid var(--yellow);padding: 40px 55px 40px 0;position:relative;}
-.faqItem:last-child{border-bottom:none;}
+
 .faqInput{display: none;}
 .faqTitle{display: flex;align-items: flex-end;margin: 0;gap: 25px;cursor: pointer;width: 100%;}
 .faqTitle > h2{font-size:60px;line-height: 1em;cursor:pointer;display:flex;justify-content:flex-start;align-items:center;transition:all 0.3s ease;margin: 0;}
@@ -228,7 +228,9 @@ html{scroll-behavior:smooth}
 .faqToggle{position:absolute;right:0;top:50%;transform:translateY(-50%);transition:transform 0.3s ease;display:flex;align-items:center;}
 .faqToggle img{transition:transform 0.3s ease;cursor:pointer;}
 .faqToggle img:hover{transform:scale(1.1);}
-.faqInput:checked ~ .faqTitle .faqToggle img { transform: rotate(45deg); }
+.faq-icon-minus{display:none;}
+.faqInput:checked ~ .faqTitle .faqToggle .faq-icon-plus{display:none;}
+.faqInput:checked ~ .faqTitle .faqToggle .faq-icon-minus{display:block;}
 .faqContent{max-height:0;overflow:hidden;transition:max-height 0.5s ease, opacity 0.3s ease;opacity:0;}
 .faqInput:checked ~ .faqContent{max-height:500px;opacity:1;}
 .faqDesc{font-size:18px;opacity:.9;margin:34px 0 12px;line-height: 1.5em;}
