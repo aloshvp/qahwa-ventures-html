@@ -253,7 +253,8 @@
 
 @media only screen and (max-width: 479px) {
 
-    /*banner*/    
+    /*banner*/   
+    .bannerContent,.bannerSwiper {height: 650px;}
     .bannerContent h1{font-size: 25px;}
 
     /*brand legacy*/
