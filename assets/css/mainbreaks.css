@@ -152,48 +152,51 @@
     /*banner*/
     .bannerContent .img{max-width: 80%;}    
     .bannerWrapper .swiper-pagination{right:15px!important;}  
-    .bannerContent p{padding: 0 25px;}  
-    .bannerContent h1 { margin-bottom: 15px; }
-    .bannerSlide{height:650px;}
+    .bannerContent h1 { margin: 0 35px 15px;font-size: 30px; }
+    .bannerContent p{padding: 0 35px;}  
 
     /*brand legacy*/
-    .brandLegacyWrapper{height: 680px;}
-    .brandLegacyContent{height: calc(680px - 120px)}
+    .brandLegacyWrapper{height: 680px;padding: 40px 0;background-image: linear-gradient(to top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.0715) 82%, rgba(0, 0, 0, 0) 100%), url("../images/home/chutneyandco-bg.png");}    
+    .brandLegacyContent{height: calc(680px - 120px);gap: 20px;}
     .brandLegacyContent img{max-width: 200px;}
-    .brandLegacyContent h2{font-size: 30px;margin-top: 15px;}
+    .brandLegacyContent h2{font-size: 25px;margin-top: 15px;line-height: 1.2em;}
     .brandLegacyContent a{margin-top: 0;font-size: 16px;padding: 12px 22px;}
     .brandLegacyRightText p {padding: 15px 15px 15px 25px;font-size: 15px;}
     .brandLegacyRightText{bottom: 90px;}
+    .brandLegacyBtns { margin-top: 15px; }
 
     /*pellini*/
-    .pelliniSecWrap{height: 680px;}
-    .pelliniSecContent{height: calc(680px - 120px);}
+    .pelliniSecWrap{height: 680px;padding: 40px 0;background-image: linear-gradient(to top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.0715) 82%, rgba(0, 0, 0, 0) 100%), url("../images/home/pelleni-bg.png");}
+    .pelliniSecContent{height: calc(680px - 120px);gap: 20px;}
     .pelliniSecContent img{max-width: 200px;}
-    .pelliniSecContent h2{max-width: 100%;margin-top: 10px;}
-    .pelliniSecContent p{max-width: 100%;}
+    .pelliniSecContent h2{margin-top: 10px;font-size: 25px;line-height: 1.2em;}
+    .pelliniSecContent p{max-width: 50%;}
     .pelliniSecContent a{margin-top: 0;font-size: 16px;padding: 12px 22px;}
     .pelliniSecRightText {bottom: 120px;margin-left: 50px;}
     .pelliniSecRightText p{font-size: 15px;padding: 15px 15px 15px 25px;}
     .pelliniSecRightText p em{display: inline-block;}
+    .pelliniBtns { margin-top: 15px; }
 
     /*faq*/
     .faqWrap{padding: 35px 0 60px;}
     .faqTitle> h2 {font-size: 25px;line-height: 1.3em;}
     .faqTitle{flex-direction: column;align-items: flex-start;gap: 10px;}
     .faqTitle em{font-size: 16px;}
-    .faqDesc{font-size: 16px;margin-bottom: 15px;}
+    .faqDesc{font-size: 16px;}
     .faqToggle > img{width: 25px;height: 25px;}
     .faqItem {padding: 25px 35px 25px 0;}
 
     /*blogs*/
     .blogsWrap{padding: 60px 0;}
-    .blogsHead > h2{font-size: 35px;}
+    .blogsHead > h2{font-size: 25px;}
     .blogsHead > span{font-size: 20px;margin-bottom: 4px;}
     .blogsBody{grid-template-columns: repeat(1, 1fr);}
     .blogItem > h5{font-size: 20px;min-height: auto;}
     .blogItem > p{min-height: auto;margin: 10px 0 25px;}
     .blogItem > a{font-size: 14px;}
     .blogsHead{margin-bottom: 45px;}
+    .blogfooterLink{font-size: 14px;padding: 14px 22px;}
+    .blogfooter{margin: 40px 0 0;}
 
 
     /*who we are*/
