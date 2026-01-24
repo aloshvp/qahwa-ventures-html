@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Init AOS
     // AOS.init({ duration: 800, easing: 'slide', once: true });
-    AOS.init({ duration: 800, easing: 'slide' });
+    AOS.init({ duration: 800, easing: 'slide', disable: 'mobile' });
 
     // Init Swiper
     new Swiper(".bannerSwiper", {
