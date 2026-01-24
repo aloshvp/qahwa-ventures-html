@@ -191,7 +191,7 @@
     .blogsHead > h2{font-size: 25px;}
     .blogsHead > span{font-size: 20px;margin-bottom: 4px;}
     .blogsBody{grid-template-columns: repeat(1, 1fr);}
-    .blogItem > h5{font-size: 20px;min-height: auto;}
+    .blogItem > h5{min-height: auto;}
     .blogItem > p{min-height: auto;margin: 10px 0 25px;}
     .blogItem > a{font-size: 14px;}
     .blogsHead{margin-bottom: 45px;}
@@ -256,6 +256,7 @@
     /*banner*/   
     .bannerContent,.bannerSwiper {height: 650px;}
     .bannerContent h1{font-size: 25px;}
+    .bannerContent p{line-height: 1.4em;}
 
     /*brand legacy*/
     .brandLegacyContent{gap: 20px;}
@@ -265,11 +266,12 @@
     .brandLegacyContent a{font-size: 15px;padding: 10px 20px;}
     .brandLegacyRightText{margin-left: 30px;}
     .brandLegacyRightText p{font-size: 14px;padding: 10px 15px 10px 25px;}
+    .brandLegacyContent p{line-height: 1.4em;}
 
     /*pellini*/
     .pelliniSecContent > img{max-width: 180px;}
     .pelliniSecContent h2{font-size: 20px;max-width: 50%;}
-    .pelliniSecContent p{max-width: 50%;}
+    .pelliniSecContent p{line-height: 1.4em;}
     .pelliniSecContent{gap: 20px;}
     .pelliniSecContent a {font-size: 15px;padding: 10px 20px;}
     .pelliniSecRightText {margin-left: 30px;bottom: 80px;}
@@ -283,7 +285,6 @@
     .faqDesc{margin: 20px 0 10px;}
 
     /*blog*/
-    .blogItem > p{font-size: 16px;}
     .blogsBody{gap: 35px;}
     .blogsHead>h2{font-size: 22px;}
     .blogItem>h5{font-size: 18px;}

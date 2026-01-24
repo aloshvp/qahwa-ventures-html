@@ -90,6 +90,7 @@
     .socialMediaLinks{margin-top: 15px;}
     .phoneSec{gap: 15px;}
     .footerLinkNav>li>a{margin-bottom: 15px;}
+    .footerLogoSec>img {max-width: 90px;}
     
 }
 
