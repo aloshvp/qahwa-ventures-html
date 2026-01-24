@@ -86,7 +86,7 @@ html{scroll-behavior:smooth}
 .bannerBgImage{object-fit:cover;object-position:center;z-index:1;}
 .bannerOverlay{position:absolute;top:0;left:0;right:0;bottom:0;z-index:2;background: linear-gradient(to top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.0715) 82%, rgba(0, 0, 0, 0) 100%);}
 .bannerContent{height: 900px;position:relative;z-index:3;color:#fff;text-align:center;display: flex;align-items: center;justify-content: center;flex-direction: column;}
-.bannerContent h1{margin-bottom: 50px;font-size: 65px;line-height: 1.3em;color: #E5DAC4;max-width: 990px;font-family: var(--inter18ptSemiBold);}
+.bannerContent h1{margin-bottom: 35px;font-size: 65px;line-height: 1.3em;color: #E5DAC4;max-width: 1000px;font-family: var(--inter18ptSemiBold);}
 .bannerContent p{font-size:18px;line-height:1.6em;color: var(--yellow);max-width: 974px;text-align: center;font-family: var(--inter18ptRegular);}
 .bannerWrapper .swiper-pagination{position:absolute!important;right:60px!important;left:auto!important;z-index:100!important;display:flex!important;flex-direction:column!important;gap:10px!important;width:auto!important;height:100%;justify-content: center;}
 .bannerWrapper .swiper-pagination-bullet{display:flex !important;align-items:center !important;justify-content:center !important;margin:0!important;width:15px!important;height:15px!important;background:transparent!important;transition:all .3s ease!important;border-radius:50%!important;border:1px solid #fff!important;}
@@ -95,9 +95,9 @@ html{scroll-behavior:smooth}
 .bannerWrapper .swiper-pagination-bullet-active::before{background:#fff!important;opacity:1!important;transform:scale(1.2)!important}
 
 /*Brand Legacy*/
-.brandLegacyWrapper{position:relative;height:830px;display:flex;align-items:center;background-color:#000;padding: 90px 0;background-image: url('../images/home/chutneyandco-bg.png');background-size: cover;background-position: center;background-repeat: no-repeat;}
-.brandLegacyContent { z-index: 3; position: relative; height: calc(830px - 180px); display: flex; flex-direction: column; gap: 25px;color: var(--yellow); justify-content: center; }
-.brandLegacyContent h2{font-size:45px;font-weight:600;margin-top:75px;line-height: 1.1em;font-family: var(--inter24ptSemiBold);}
+.brandLegacyWrapper{position:relative;height:830px;display:flex;align-items:center;background-color:#000;padding: 100px 0;background-image: url('../images/home/chutneyandco-bg.png');background-size: cover;background-position: center;background-repeat: no-repeat;}
+.brandLegacyContent { z-index: 3; position: relative; height: calc(830px - 200px); display: flex; flex-direction: column; gap: 25px;color: var(--yellow);}
+.brandLegacyContent h2{font-size:45px;margin-top:75px;line-height: 1.1em;font-family: var(--inter24ptSemiBold);}
 .brandLegacyContent h2>em{display: block;}
 .brandLegacyContent p{font-size:18px;line-height:1.5em;max-width:700px;}
 .brandLegacyBtns{display: flex;gap: 10px;margin-top: 75px;}
@@ -105,13 +105,13 @@ html{scroll-behavior:smooth}
 .brandLegacyBtns a:hover{background: rgb(66, 40, 27,.46);}
 .brandLegacyBtns a.discoverBtn{background: rgb(66, 40, 27, .46);border: 1px solid rgb(66, 40, 27, .46);}
 .brandLegacyBtns a.discoverBtn:hover{background: #42281B;}
-.brandLegacyRightText{position:absolute;bottom:130px;right:0;z-index:3;color:var(--yellow);background: rgba(41, 41, 41, 0.66);border-radius: 50px 0 0 50px;}
+.brandLegacyRightText{position:absolute;bottom:140px;right:0;z-index:3;color:var(--yellow);background: rgba(41, 41, 41, 0.66);border-radius: 50px 0 0 50px;}
 .brandLegacyRightText p{font-size:16px;line-height:1.5em;padding: 28px 56px 28px 42px;font-family: var(--inter24ptRegular);}
 
 /*Pelleni Sec*/
-.pelliniSecWrap{position:relative;height:830px;display:flex;align-items:center;background-color:#000;padding:90px 0;background-image: url('../images/home/pelleni-bg.png');background-size: cover;background-position: center;background-repeat: no-repeat;}
-.pelliniSecContent{z-index:3;position:relative;height:calc(830px - 180px);display:flex;flex-direction:column;gap:25px;color:var(--yellow);justify-content: center;}
-.pelliniSecContent h2{font-size:45px;font-weight:600;margin-top:75px;line-height:1.1em}
+.pelliniSecWrap{position:relative;height:830px;display:flex;align-items:center;background-color:#000;padding:100px 0;background-image: url('../images/home/pelleni-bg.png');background-size: cover;background-position: center;background-repeat: no-repeat;}
+.pelliniSecContent{z-index:3;position:relative;height:calc(830px - 200px);display:flex;flex-direction:column;gap:25px;color:var(--yellow);justify-content: center;}
+.pelliniSecContent h2{font-size:45px;margin-top:75px;line-height:1.1em;font-family: var(--inter24ptSemiBold);}
 .pelliniSecContent h2>em{display:block}
 .pelliniSecContent p{font-size:18px;line-height:1.5em;max-width:700px}
 .pelliniBtns{display: flex;gap: 10px;margin-top: 75px;}
@@ -119,29 +119,50 @@ html{scroll-behavior:smooth}
 .pelliniBtns a:hover{background: rgb(66, 40, 27,.46);}
 .pelliniBtns a.discoverBtn{background: rgb(66, 40, 27, .46);border: 1px solid rgb(66, 40, 27, .46);}
 .pelliniBtns a.discoverBtn:hover{background: #42281B;}
-.pelliniSecRightText{position:absolute;bottom:118px;right:0;z-index:3;color:var(--yellow);background:#292929a8;border-radius:50px 0 0 50px}
+.pelliniSecRightText{position:absolute;bottom:65px;right:0;z-index:3;color:var(--yellow);background:#292929a8;border-radius:50px 0 0 50px}
 .pelliniSecRightText p{font-size:16px;line-height:1.6em;padding:21px 56px 20px 36px;text-align: right;}  
 .pelliniSecRightText p em{display:block;}
 
+/*faq*/
+.faqWrap{padding: 95px 0 120px;background: #000000;}
+.faqItem{color: var(--yellow);border-bottom:1px solid var(--yellow);padding: 25px 55px 25px 0;position:relative;}
+.faqInput{display: none;}
+.faqTitle{display: flex;align-items: flex-end;margin: 0;gap: 25px;cursor: pointer;width: 100%;}
+.faqTitle > h2{font-size:60px;line-height: 1em;cursor:pointer;display:flex;justify-content:flex-start;align-items:center;transition:all 0.3s ease;margin: 0;font-family: var(--inter24ptBold);}
+.faqTitle em{font-size: 18px;font-weight: 400;position: relative;bottom: 5px;}
+.faqTitle:hover{color:var(--yellow);}
+.faqInput:checked ~ .faqTitle {color:var(--yellow);}
+.faqToggle{position:absolute;right:0;top:50%;transform:translateY(-50%);transition:transform 0.3s ease;display:flex;align-items:center;}
+.faqToggle img{transition:transform 0.3s ease;cursor:pointer;}
+.faqToggle img:hover{transform:scale(1.1);}
+.faq-icon-minus{display:none;}
+.faqInput:checked ~ .faqTitle .faqToggle .faq-icon-plus{display:none;}
+.faqInput:checked ~ .faqTitle .faqToggle .faq-icon-minus{display:block;}
+.faqContent{max-height:0;overflow:hidden;transition:max-height 0.5s ease, opacity 0.3s ease;opacity:0;}
+.faqInput:checked ~ .faqContent{max-height:500px;opacity:1;}
+.faqDesc{font-size:18px;opacity:.9;margin:35px 0 12px;line-height: 1.5em;}
+.faqLink{display:inline-block;transition:.3s ease;font-size:18px;font-family: var(--inter18ptSemiBold);}
+.faqLink:hover{color:var(--yellow);}
+
 /*blogs*/
-.blogsWrap{padding: 80px 0;background: #151412;}
+.blogsWrap{padding: 85px 0;background: #151412;}
 .blogsHead{text-align: center;color: var(--yellow);margin-bottom: 80px;}
-.blogsHead > h2{font-size: 45px;line-height: 1em;font-weight: 600;margin: 0;}
+.blogsHead > h2{font-size: 45px;line-height: 1em;margin: 0;font-family: var(--inter24ptSemiBold);}
 .blogsBody{display: grid;grid-template-columns: repeat(4, 1fr);gap: 30px;color: var(--yellow);}
 .blogItemLink{display: block;text-decoration: none;color: inherit;}
-.blogItem{border-bottom: 1px solid #a3a099;cursor: pointer;}
-.blogItem > span{font-size: 13px;line-height: 1em;margin: 30px 0 10px;display: block;}
-.blogItem > h5{font-size: 20px;line-height: 1.5em;font-weight: 600 !important;min-height: 55px;}
-.blogItem > p{font-size: 16px;line-height: 1.6em;margin: 25px 0;}
-.blogLink{font-size: 15px;line-height: 1em;margin-bottom: 10px;display: inline-flex;gap: 5px;align-items: center;}
-.blogLink > img{width: 18px;height: 10px;transition: transform 0.3s ease;}
+.blogItem{border-bottom: 1px solid #938f87;cursor: pointer;}
+.blogItem > span{font-size: 13px;line-height: 1em;margin: 30px 0 10px;display: block;font-family: var(--inter24ptRegular);}
+.blogItem > h5{font-size: 18px;line-height: 1.5em;font-family: var(--inter24ptMedium);}
+.blogItem > p{font-size: 14px;line-height: 1.6em;margin: 25px 0;font-family: var(--inter24ptRegular);}
+.blogLink{font-size: 12px;line-height: 1em;margin-bottom: 12px;display: inline-flex;gap: 5px;align-items: center;font-family: var(--inter18ptRegular);}
+.blogLink > img{width: 16px;height: 8px;transition: transform 0.3s ease;}
 .blogItem:hover .blogLink > img{transform: translateX(5px);}
 .blogImg{overflow:hidden;position:relative;height:258px;}
 .blogImg img{transition:transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);width: 100%;height:100%;object-fit:cover;transform-origin:center;will-change:transform;}
 .blogItem:hover .blogImg img{transform:scale(1.05);}
-.blogfooter{display: flex;justify-content:center;align-items: center;margin: 60px 0 0;}
+.blogfooter{display: flex;justify-content:center;align-items: center;margin: 55px 0 0;}
 .blogfooterLink{background: rgb(66, 40, 27, .46);border: 1px solid rgb(66, 40, 27, .46);border-radius: 50px;align-items: center;gap: 10px;padding: 16px 24px;transition: all .3s;display: inline-flex;width: max-content;font-size: 16px;font-family: var(--inter24ptSemiBold);color: var(--yellow);}
-.blogfooterLink:hover{background: #42281B;}
+.blogfooterLink:hover{background: #42281B;color: var(--yellow);}
 
 /*who we are*/
 .whoWeAreWrap{position:relative;height:900px;display:flex;align-items:center;background-color:#000;padding: 90px 0;}
@@ -214,28 +235,6 @@ html{scroll-behavior:smooth}
 .aboutContentLft > h3 > em{font-weight: 400;font-style: normal;display: block;}
 .aboutContentRght{display: flex;align-items: flex-end;}
 .aboutContentRght > p{font-size: 18px;line-height: 1.6em;max-width: 510px;margin-right: 60px;}
-
-/*faq*/
-.faqWrap{padding: 115px 0 130px;background: #000000;}
-.faqItem{color: var(--yellow);border-bottom:1px solid var(--yellow);padding: 40px 55px 40px 0;position:relative;}
-
-.faqInput{display: none;}
-.faqTitle{display: flex;align-items: flex-end;margin: 0;gap: 25px;cursor: pointer;width: 100%;}
-.faqTitle > h2{font-size:60px;line-height: 1em;cursor:pointer;display:flex;justify-content:flex-start;align-items:center;transition:all 0.3s ease;margin: 0;}
-.faqTitle em{font-size: 18px;font-weight: 400;position: relative;bottom: 5px;}
-.faqTitle:hover{color:var(--yellow);}
-.faqInput:checked ~ .faqTitle {color:var(--yellow);}
-.faqToggle{position:absolute;right:0;top:50%;transform:translateY(-50%);transition:transform 0.3s ease;display:flex;align-items:center;}
-.faqToggle img{transition:transform 0.3s ease;cursor:pointer;}
-.faqToggle img:hover{transform:scale(1.1);}
-.faq-icon-minus{display:none;}
-.faqInput:checked ~ .faqTitle .faqToggle .faq-icon-plus{display:none;}
-.faqInput:checked ~ .faqTitle .faqToggle .faq-icon-minus{display:block;}
-.faqContent{max-height:0;overflow:hidden;transition:max-height 0.5s ease, opacity 0.3s ease;opacity:0;}
-.faqInput:checked ~ .faqContent{max-height:500px;opacity:1;}
-.faqDesc{font-size:18px;opacity:.9;margin:34px 0 12px;line-height: 1.5em;}
-.faqLink{display:inline-block;font-weight:600;transition:.3s ease;font-size:18px;}
-.faqLink:hover{color:var(--yellow);}
 
 /*Testimonial*/
 .testimonialWrap{padding: 100px 0 80px;background: #151412;}

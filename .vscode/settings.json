@@ -1,4 +1,5 @@
 {
+    "files.autoSave": "afterDelay",
     "liveServer.settings.port": 5501,
     "[css]": {
         "editor.formatOnSave": false
