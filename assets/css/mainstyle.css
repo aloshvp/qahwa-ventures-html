@@ -110,7 +110,7 @@ html{scroll-behavior:smooth}
 
 /*Pelleni Sec*/
 .pelliniSecWrap{position:relative;height:830px;display:flex;align-items:center;background-color:#000;padding:100px 0;background-image: url('../images/home/pelleni-bg.png');background-size: cover;background-position: center;background-repeat: no-repeat;}
-.pelliniSecContent{z-index:3;position:relative;height:calc(830px - 200px);display:flex;flex-direction:column;gap:25px;color:var(--yellow);justify-content: center;}
+.pelliniSecContent{z-index:3;position:relative;height:calc(830px - 200px);display:flex;flex-direction:column;gap:25px;color:var(--yellow);}
 .pelliniSecContent h2{font-size:45px;margin-top:75px;line-height:1.1em;font-family: var(--inter24ptSemiBold);}
 .pelliniSecContent h2>em{display:block}
 .pelliniSecContent p{font-size:18px;line-height:1.5em;max-width:700px}

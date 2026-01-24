@@ -55,30 +55,43 @@
 @media only screen and (max-width: 991px) {
 
     /*banner*/    
-    .bannerContent h1{font-size: 40px;margin: 0 25px 25px;}
+    .bannerContent h1{font-size: 40px;margin: 0 65px 25px;}
     .bannerContent p{margin: 0 auto;padding: 0 65px;font-size: 16px;}
-    .bannerSlide{height:750px;}
+    .bannerContent,.bannerSwiper{height:750px;}
     .bannerWrapper .swiper-pagination{right:25px!important;}
     
-    /**/
+    /*brand legacy*/
     .brandLegacyWrapper{height: 750px;}
     .brandLegacyContent{height: calc(750px - 160px);}
     .brandLegacyContent img{max-width: 250px;}
     .brandLegacyContent h2{font-size: 35px;margin-top: 35px;}
     .brandLegacyContent p{font-size: 16px;max-width: 50%;}
-    .brandLegacyContent a{font-size: 18px;margin-top: 35px;}
+    .brandLegacyContent a{font-size: 18px;}
     .brandLegacyRightText p{padding: 20px 25px 20px 34px;}
+    .brandLegacyBtns{margin-top: 35px;}
+    .brandLegacyRightText{bottom: 120px;}
 
-    /**/
+    /*pellini*/
     .pelliniSecWrap{height: 750px;}
     .pelliniSecContent{height: calc(750px - 160px);}
     .pelliniSecContent img{max-width: 250px;}
     .pelliniSecContent h2{font-size: 35px;margin-top: 35px;max-width: 50%;}
     .pelliniSecContent p{font-size: 16px;max-width: 50%;}
-    .pelliniSecContent a{margin-top: 25px;font-size: 18px;}
-    .pelliniSecRightText{bottom: 90px;}
+    .pelliniSecContent a{font-size: 18px;}
+    .pelliniSecRightText{bottom: 100px;}
     .pelliniSecRightText p{padding:18px 25px 18px 34px;}
+    .pelliniBtns{margin-top: 35px;}
 
+    /*faq*/
+    .faqWrap{padding: 35px 0 60px;}
+    .faqTitle > h2{font-size: 30px;}    
+    .faqToggle > img{width: 30px;height: 30px;}
+    .faqDesc{margin: 20px 0 12px;}
+
+    /*blogs*/
+    .blogsWrap{padding: 60px 0;}
+    .blogsBody{grid-template-columns: repeat(2, 1fr);gap: 60px 30px;}
+    .blogsHead{margin-bottom: 45px;}
 
     /*who we are*/
     .whoWeAreWrap{height: 750px;padding: 80px 0;}
@@ -123,12 +136,6 @@
     .aboutContent{flex-direction: column;}
     .aboutContentRght > p{max-width: 100%;margin: 0;}
 
-    /*faq*/
-    .faqWrap{padding: 50px 0 60px;}
-    .faqTitle > h2{font-size: 30px;}
-    .faqItem{padding:30px 45px 30px 0;}
-    .faqToggle > img{width: 30px;height: 30px;}
-
     /*testimonial*/
     .testimonialWrap{padding: 80px 0;}
     .testimonialHead{margin-bottom: 40px;}
@@ -137,12 +144,7 @@
     /*Brochure*/    
     .BrochureContent{right: unset;left: 50%;transform: translate(-50%,-50%);}
     .BrochureContent > p {margin: 0 0 15px;}
- 
-    /*blogs*/
-    .blogsWrap{padding: 80px 0;}
-    .blogsBody{grid-template-columns: repeat(2, 1fr);gap: 60px 30px;}
-    .blogsHead{margin-bottom: 80px;}
-   
+    
 }
 
 @media only screen and (max-width: 767px) {  
