@@ -38,7 +38,7 @@ function initializeHeader() {
     const header = document.getElementById("header");
     if (header) {
         const updateHeaderState = () => {
-            header.classList.toggle("scrolled", window.scrollY > 50 || window.innerWidth < 1024);
+            header.classList.toggle("scrolled", window.scrollY > 150 || window.innerWidth < 1024);
         };
 
         window.addEventListener("scroll", updateHeaderState);

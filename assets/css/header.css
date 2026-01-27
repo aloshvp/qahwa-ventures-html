@@ -2,18 +2,37 @@
 .headerWrap{position: fixed;top: 0;left: 0;width: 100%;z-index: 999;color: var(--yellow);background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);}
 .headerWrap > .container{width:100%}
 .headerSec{display:flex;justify-content:space-between;padding: 35px 0 0;height: 135px;}
-.headerWrap.scrolled .headerSec{padding: 30px 0 0;height: 100px;}
-.headerNavLinks{display: flex;justify-content: center;align-items: center;width: 100%;}
+.headerWrap.scrolled{background: rgba(0, 0, 0, 0.85); transition: background 0.3s ease;background: rgba(21, 20, 18, 0.95);}
+.headerWrap.scrolled .headerSec{padding: 10px 0;height: 90px;}
+.headerNavLinks{display: flex;justify-content: center;align-items: center;width: 100%;transition: justify-content 0.3s ease;}
 .navLinksList{display:flex;gap:40px;transition:gap .3s ease;height: 100px;}
+.headerWrap.scrolled .headerNavLinks{justify-content: center;}
 .headerWrap.scrolled .headerNavLinks .navLinksList{gap:30px;height: 70px;}
 .navLinksList > li{display: block;}
 .navLinksList > li > a{font-size: 20px;line-height: 1em;}
 .headerLogoSec{position: relative;}
-img.headerLogoImg{max-width: 120px;position: relative;top: -25px;transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);}
-.headerWrap.scrolled img.headerLogoImg{transform:scale(0.75);top:-40px}
-.hamburger{display:flex;gap:17.5px;cursor:pointer;height: max-content;width: 120px;height: 39px;padding: 12px 20px;border-radius: 20px;background: #282828;position: absolute;left: 60px;border: 1px solid #373737;align-items: center;}
+img.headerLogoImg{max-width: 100px;position: relative;top: -25px;transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);}
+.headerWrap.scrolled img.headerLogoImg{transform:scale(0.75);top:-40px;}
+.hamburger{display:flex;gap:17.5px;cursor:pointer;height: max-content;width: 120px;height: 39px;padding: 12px 20px;border-radius: 20px;background: #282828;position: absolute;left: 60px;border: 1px solid #373737;align-items: center;transition: all 0.3s ease;}
 .hamburger > span{font-size: 13px;line-height: 1em;font-weight: 500;font-weight:600;color:var(--yellow);font-family: var(--inter24ptSemiBold);display: block;}
-.headerWrap.scrolled .hamburger span{width:23px}
+
+/* Menu Items Styles - Hidden by default globally */
+.navLinksList li.headerMenuItem { display: none; }
+.headerMenuItem a { color: var(--yellow); text-decoration: none; font-weight: 500; font-size: 16px; transition: color 0.3s; }
+.headerMenuItem a:hover { color: #fff; }
+
+@media screen and (min-width: 768px) {
+.headerWrap .headerNavLinks{justify-content:flex-start}
+.headerWrap .navLinksList{width:100%;justify-content:flex-start;align-items:center}
+.headerWrap .headerLogoSec{margin-left:calc(50% - 50px);margin-right:auto;transition:all .5s cubic-bezier(0.25,0.46,0.45,0.94)}
+.headerWrap.scrolled .headerLogoSec{margin-left:0;margin-right:auto}
+.headerWrap.scrolled img.headerLogoImg{transform-origin:left center;top:0;max-width: 80px;}
+.headerWrap.scrolled .hamburger{opacity:0;pointer-events:none;visibility:hidden;transition:all .3s ease}
+.navLinksList li.headerMenuItem{display:block;max-width:0;opacity:0;overflow:hidden;margin:0;transform:translateY(-20px);transition:all .5s ease}
+.headerWrap.scrolled .navLinksList li.headerMenuItem{max-width:150px;opacity:1;transform:translateY(0)}
+.headerWrap.scrolled .navLinksList{gap:0}
+}
+
 .talkWithUsSec{width: 38px;position: relative;transition:all .3s ease;cursor: pointer;}
 .talkWithUsSec span{font-size: 18px;line-height: 1.2em;font-weight:500;text-align: right;display: block;transition:all .3s ease}
 .talkWithUsIcon{position: absolute;bottom: 40px;left: -15px;}
@@ -80,7 +99,8 @@ img.headerLogoImg{max-width: 120px;position: relative;top: -25px;transition: all
 @media screen and (min-width: 1440px) {
 
     .navLinksList{gap:60px;}
-    .headerWrap.scrolled .headerNavLinks .navLinksList{gap:50px;}
+    .headerWrap.scrolled .headerNavLinks .navLinksList{gap:30px;}
+    .headerWrap.scrolled img.headerLogoImg {max-width: 100px;}
 }
 
 @media screen and (min-width: 1300px) {}
@@ -89,7 +109,7 @@ img.headerLogoImg{max-width: 120px;position: relative;top: -25px;transition: all
 
     .navLinksList > li > a{font-size: 18px;}
     .talkWithUsSec span{font-size: 16px;}
-    .headerWrap.scrolled img.headerLogoImg {top: -20px}
+    
 
 }
 
@@ -98,7 +118,7 @@ img.headerLogoImg{max-width: 120px;position: relative;top: -25px;transition: all
     .hamburger.active span:nth-child(1) {transform: rotate(45deg) translate(5px, 5px);}    
     .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(7px, -6px);}
     .talkWithUsSec{width: 120px;display: flex;align-items: center;justify-content: center;position: relative;}
-    .headerWrap.scrolled .headerSec{height: 80px;padding: 25px 0 0;}
+    .headerWrap.scrolled .headerSec{height: 80px;}
     .talkWithUsIcon{bottom: 5px;left: -18px;}
     .headerWrap.scrolled .headerLogo > img{top:-20px;max-width: 90px;}
 
@@ -122,12 +142,15 @@ img.headerLogoImg{max-width: 120px;position: relative;top: -25px;transition: all
 
     .whatsappBtnWrap{right: 15px;}
     .headerWrap.scrolled .talkWithUsSec span{font-size: 14px;}
-    .headerWrap.scrolled .headerSec {padding: 20px 0 0; }
-    .hamburger{gap: 7px;}
+    .headerWrap.scrolled .headerSec {padding: 5px 0;height: 65px; }
+    .hamburger{gap: 7px;left: unset;right: 15px;top: 13px;}
     .headerWrap.scrolled .talkWithUsIcon{width: 18px;height: 18px;left: 0px;bottom: 25px;}
     .talkWithUsSec{align-items: flex-start;}
-    .sidebarContent{width: 350px;max-width: 85vw;}    
-    .hamburger {left: 15px;}   
+    .sidebarContent{width: 300px;max-width: 85vw;}
+    .headerWrap.scrolled img.headerLogoImg{top: 0px;max-width: 70px;padding: 0;}
+    .headerWrap.scrolled .headerNavLinks{justify-content: flex-start;}
+    .sidebarContent{left: unset;right: 0px; transform: translateX(100%);}
+    .sidebarContent .hamburger{position: absolute;}
 
 }
 
@@ -144,8 +167,7 @@ img.headerLogoImg{max-width: 120px;position: relative;top: -25px;transition: all
     .sidebarContactInfo>a{font-size: 16px;}
     .sidebarAddress>p{font-size: 16px;}
     .sidebarContactInfo{padding: 30px 0;}
-    .sidebarAddress{padding: 30px 0 0;}
-    .sidebarNavList{padding: 30px 0;}
+    .sidebarAddress{padding: 30px 0 0;}    
     .sidebarContent{padding: 25px;}
 }
 
