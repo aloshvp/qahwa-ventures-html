@@ -158,9 +158,9 @@ img.headerLogoImg{max-width: 100px;position: relative;top: -25px;transition: all
 
     img.headerLogoImg{max-width: 100px;}
     .sidebarHeader{padding: 20px 20px 5px;}
-    .sidebarNavList a{font-size: 16px;padding: 0 0 20px;}
+    .sidebarNavList a{font-size: 16px;}
     .sidebarNavList li{margin-bottom: 0;}
-    .hamburger{width: max-content;padding: 10px 18px;}
+    .hamburger{width: max-content;padding: 8px 16px;height: 35px;}
     .hamburger > img{max-width: 15px;}
     .hamburger > span{font-size: 12px;}
     .headerWrap.scrolled .hamburger span{width: auto;}
