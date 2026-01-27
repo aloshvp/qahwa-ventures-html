@@ -40,6 +40,7 @@ p>em{display:block}
 input,input:focus,input:active,input:focus-visible{outline:none!important;box-shadow:none!important}
 select:focus,select:active,select:focus-visible{outline:none;box-shadow:none}
 html{scroll-behavior:smooth}
+* { -webkit-tap-highlight-color: transparent; }
 
 /* Custom Scrollbar - Black Theme */
 ::-webkit-scrollbar{width:12px;height:12px}
