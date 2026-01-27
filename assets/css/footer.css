@@ -24,7 +24,7 @@
 .newsletterInput input{all: unset;width: 100%;padding: 6px 0; border-bottom: 1px solid var(--yellow);}
 .newsletterInput input::placeholder{color: var(--yellow);font-size: 14px;line-height: 1em;}
 .newsletterInput > a{position: absolute;top: 3px;right: 0;}
-.footerBottomSec{display: flex;justify-content: space-between;color: var(--yellow);padding-top: 30px;border-top: 1px solid #707070;}
+.footerBottomSec{display: flex;justify-content: space-between;color: var(--yellow);padding-top: 25px;border-top: 1px solid #707070;}
 .footerBottomSec > span{font-size: 14px;line-height: 1em;font-family: var(--inter24ptRegular);}
 .qahwaVenturesPartnersLogo{display: flex;gap: 20px;}
 .qahwaVenturesText{max-width: 413px;font-size: 16px;line-height: 1.8em;margin: 42px 0 72px;}
