@@ -3,6 +3,9 @@
 }
 
 @media screen and (min-width: 1600px) {
+    
+    /*portfolio*/
+    .portfolioImg{height: 525px;padding: 80px 80px 100px;}
 
    
 }
@@ -18,7 +21,9 @@
     /*Brochure*/
 }
 
-@media screen and (max-width: 1200px) {}
+@media screen and (max-width: 1200px) {
+    .portfolioItem > h5{font-size:30px;}
+}
 
 
 @media screen and (max-width: 1024px) {
@@ -33,7 +38,14 @@
     .careerBannerSec h1{font-size: 40px;margin: 30px 0;}
     .careerBannerSec span{font-size: 22px;line-height: 1.6em;margin-bottom: 25px;}
     .careerBannerSec p{font-size: 16px;line-height: 1.4em;margin-bottom: 40px;}
-    .careerBannerSec > a{margin-bottom: 20px;}        
+    .careerBannerSec > a{margin-bottom: 20px;}  
+    
+    /*portfolio*/
+    .portfolioWrapper{padding: 120px 0 80px;}
+    .portfolioGrid{grid-template-columns: repeat(2, 1fr);gap: 60px 40px;}
+    .portfolioFooter{padding-top: 60px;}
+    .portfolioItem > h5{margin-top: 25px;}
+    .portfolioItem>span{margin: 8px 0 20px;}
     
 }
 

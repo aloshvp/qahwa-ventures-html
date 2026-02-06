@@ -20,7 +20,7 @@
 .portfolioItem{border-bottom: 1px solid #676257;cursor: pointer;transition: all 0.3s ease;}
 .portfolioItem > h5{font-size: 35px;line-height: 1.5em;font-family: var(--inter24ptMedium);margin-top: 35px;text-align: center;transition: all 0.3s ease;}
 .portfolioItem > span{font-size: 18px;line-height: 1em;margin: 10px 0 25px;display: block;font-family: var(--inter24ptSemiBold);text-align: center;transition: all 0.3s ease;}
-.portfolioImg{overflow:hidden;position:relative;height: 525px;display: flex;justify-content: space-between;align-items: center;flex-direction: column;padding: 80px 0 100px;}
+.portfolioImg{overflow:hidden;position:relative;height: 425px;display: flex;justify-content: space-between;align-items: center;flex-direction: column;padding: 60px 60px 80px;}
 .portfolioImg::before{content:"";position:absolute;inset:0;z-index:1;background-size:cover;background-position:center;background-repeat:no-repeat;transition:transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);will-change:transform;}
 .portfolioImg::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,#000f 0%,#0000008a 50%,#0000 100%);z-index:2;pointer-events:none}
 .portfolioImg.img1::before{background-image: url(../images/static/Chutney&Co-bg.png);}
