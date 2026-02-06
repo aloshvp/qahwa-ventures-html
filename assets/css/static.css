@@ -13,17 +13,21 @@
 
 /*portfolio*/
 .portfolioWrapper{padding: 160px 0 120px;background: #151412;}
-.portfolioTitle{text-align: center;color: var(--yellow);margin-bottom: 80px;}
+.portfolioTitle{text-align: center;color:#D8D8D8;margin-bottom: 80px;}
 .portfolioTitle > h2{font-size: 45px;line-height: 1em;margin: 0;font-family: var(--inter24ptSemiBold);}
-.portfolioGrid{display: grid;grid-template-columns: repeat(3, 1fr);gap: 30px;color: var(--yellow);color: #676767;}
+.portfolioGrid{display: grid;grid-template-columns: repeat(3, 1fr);gap: 40px;color: var(--yellow);color: #676767;}
 .portfolioItemLink{display: block;text-decoration: none;color: inherit;}
-.portfolioItem{border-bottom: 1px solid #676257;cursor: pointer;}
-.portfolioItem > h5{font-size: 35px;line-height: 1.5em;font-family: var(--inter24ptMedium);margin-top: 35px;text-align: center;}
-.portfolioItem > span{font-size: 18px;line-height: 1em;margin: 10px 0 25px;display: block;font-family: var(--inter24ptSemiBold);text-align: center;}
-.portfolioImg{overflow:hidden;position:relative}
-.portfolioImg::before{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,#000f 0%,#0000008a 50%,#0000 100%);z-index:2;pointer-events:none}
-.portfolioImg img{width:100%;height:100%;object-fit:cover;position:relative;z-index:1;transition:transform .6s cubic-bezier(0.25,0.46,0.45,0.94);transform-origin:center;will-change:transform}
-.portfolioItem:hover .portfolioImg img{transform:scale(1.05);}
+.portfolioItem{border-bottom: 1px solid #676257;cursor: pointer;transition: all 0.3s ease;}
+.portfolioItem > h5{font-size: 35px;line-height: 1.5em;font-family: var(--inter24ptMedium);margin-top: 35px;text-align: center;transition: all 0.3s ease;}
+.portfolioItem > span{font-size: 18px;line-height: 1em;margin: 10px 0 25px;display: block;font-family: var(--inter24ptSemiBold);text-align: center;transition: all 0.3s ease;}
+.portfolioImg{overflow:hidden;position:relative;height: 525px;display: flex;justify-content: space-between;align-items: center;flex-direction: column;padding: 80px 0 100px;}
+.portfolioImg::before{content:"";position:absolute;inset:0;z-index:1;background-size:cover;background-position:center;background-repeat:no-repeat;transition:transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);will-change:transform;}
+.portfolioImg::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,#000f 0%,#0000008a 50%,#0000 100%);z-index:2;pointer-events:none}
+.portfolioImg.img1::before{background-image: url(../images/static/Chutney&Co-bg.png);}
+.portfolioImg.img2::before{background-image: url(../images/static/portfolio-PelliniCaffe.png);}
+.portfolioImg.img3::before{background-image: url(../images/static/portfolio-FutureAcquisitions.png);}
+.portfolioImg img{position:relative;z-index:3;}
+.portfolioItem:hover .portfolioImg::before{transform:scale(1.05);}
 .portfolioItem:hover{color: #D8D8D8;border-bottom: 1px solid #CFC4AE;}
 .portfolioFooter{padding-top: 80px;}
 .portfolioFooter > p{font-size: 18px;line-height: 1.4em;font-family: var(--inter24ptRegular);text-align: center;color: #CECECE;}
