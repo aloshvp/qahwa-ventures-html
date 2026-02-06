@@ -20,8 +20,9 @@
 .portfolioItem{border-bottom: 1px solid #676257;cursor: pointer;}
 .portfolioItem > h5{font-size: 35px;line-height: 1.5em;font-family: var(--inter24ptMedium);margin-top: 35px;text-align: center;}
 .portfolioItem > span{font-size: 18px;line-height: 1em;margin: 10px 0 25px;display: block;font-family: var(--inter24ptSemiBold);text-align: center;}
-.portfolioImg{overflow:hidden;position:relative;height:258px;}
-.portfolioImg img{transition:transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);width: 100%;height:100%;object-fit:cover;transform-origin:center;will-change:transform;}
+.portfolioImg{overflow:hidden;position:relative}
+.portfolioImg::before{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,#000f 0%,#0000008a 50%,#0000 100%);z-index:2;pointer-events:none}
+.portfolioImg img{width:100%;height:100%;object-fit:cover;position:relative;z-index:1;transition:transform .6s cubic-bezier(0.25,0.46,0.45,0.94);transform-origin:center;will-change:transform}
 .portfolioItem:hover .portfolioImg img{transform:scale(1.05);}
 .portfolioItem:hover{color: #D8D8D8;border-bottom: 1px solid #CFC4AE;}
 .portfolioFooter{padding-top: 80px;}
