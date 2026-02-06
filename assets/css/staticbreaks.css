@@ -42,7 +42,7 @@
     
     /*portfolio*/
     .portfolioWrapper{padding: 120px 0 80px;}
-    .portfolioGrid{grid-template-columns: repeat(2, 1fr);gap: 60px 40px;}
+    .portfolioGrid{grid-template-columns: repeat(2, 1fr);gap: 60px 45px;}
     .portfolioFooter{padding-top: 60px;}
     .portfolioItem > h5{margin-top: 25px;}
     .portfolioItem>span{margin: 8px 0 20px;}
@@ -53,20 +53,33 @@
 
     /*career*/
     .careerBannerSec > a{ font-size: 16px; padding: 12px 22px; }
+
+    /*portfolio*/
+    .portfolioWrapper{padding: 100px 0 60px;}
+    .portfolioTitle{margin-bottom: 40px;}
+    .portfolioGrid{grid-template-columns: repeat(1, 1fr);gap: 45px;}
+    .portfolioFooter{padding-top: 40px;}
+    .portfolioImg{height: 400px;}
+    .portfolioItem > h5{margin-top: 20px;font-size: 25px;}
+    .portfolioItem>span{margin: 8px 0 20px;font-size: 18px;}
+    .portfolioImg img{max-width: 250px;}
    
 
 }
 
 @media only screen and (max-width: 479px) {
 
-    /*career*/   
-    .careerBannerWrapper{height: 650px;background-position: 50% calc(100% - 320px);}
+     /*career*/   
+     .careerBannerWrapper{height: 650px;background-position: 50% calc(100% - 320px);}
      .careerBannerSec h1{font-size: 25px;margin: 30px 0;}
      .careerBannerSec span{font-size: 18px;margin-bottom: 25px;}
      .careerBannerSec p{font-size: 16px;margin-bottom: 25px;}
      .careerBannerSec p >em{display: inline-block;}     
      .careerBannerSec > a { font-size: 15px; padding: 10px 20px; margin-bottom: 20px;}
 
+    /*portfolio*/
+     .portfolioImg{padding: 40px 40px 60px;}
+     .portfolioImg img{max-width: 200px;}
 
 
 }
