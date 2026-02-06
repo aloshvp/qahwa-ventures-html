@@ -6,11 +6,13 @@ document.addEventListener("DOMContentLoaded", () => {
     AOS.init({ duration: 800, easing: 'slide' });
 
     // Init Swiper
-    new Swiper(".bannerSwiper", {
-        pagination: { el: ".swiper-pagination", clickable: true },
-        loop: true,
-        effect: "fade"
-    });
+    if (typeof Swiper !== 'undefined') {
+        new Swiper(".bannerSwiper", {
+            pagination: { el: ".swiper-pagination", clickable: true },
+            loop: true,
+            effect: "fade"
+        });
+    }
 
     // Helper to load components
     const loadComponent = (id, path, callback) => {

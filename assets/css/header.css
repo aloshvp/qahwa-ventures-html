@@ -1,6 +1,7 @@
 /*Header*/
 .headerWrap{position: fixed;top: 0;left: 0;width: 100%;z-index: 999;color: var(--yellow);background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);}
 .headerWrap > .container{width:100%}
+.headerWrap.careerHeader{background: none;}
 .headerSec{display:flex;justify-content:space-between;padding: 35px 0 0;height: 135px;}
 .headerWrap.scrolled{background: rgba(0, 0, 0, 0.85); transition: background 0.3s ease;background: rgba(21, 20, 18, 0.95);}
 .headerWrap.scrolled .headerSec{padding: 10px 0;height: 90px;}

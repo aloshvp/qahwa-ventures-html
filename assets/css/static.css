@@ -1,0 +1,12 @@
+
+/* career */
+.careerBannerWrapper{height:900px;background-color:#151412;background-image:url(../images/static/career-bg.svg);background-repeat:no-repeat;background-size:cover;background-position: 50% calc(100% - 60px);}
+.careerBannerWrapper .container{height: 100%;}
+.careerBannerSec{height: 100%;display: flex;align-items: center;justify-content: center;flex-direction: column;text-align: center;color: #fff;}
+.careerBannerSec h1{font-size: 45px;line-height: 1em;font-family: var(--inter24ptSemiBold);margin-bottom: 60px;text-transform: uppercase;}
+.careerBannerSec span{font-size: 30px;line-height: 1.6em;font-family: var(--inter24ptSemiBold);margin-bottom: 38px;}
+.careerBannerSec span > em{display: block;}
+.careerBannerSec p{font-size: 18px;line-height: 1.4em;font-family: var(--inter24ptRegular);margin-bottom: 50px;}
+.careerBannerSec > a{background: #42281B;border: 1px solid #42281B;border-radius: 50px;align-items: center;gap: 10px;padding: 16px 24px;transition: all .3s;display: inline-flex;width: max-content;font-size: 16px;font-family: var(--inter24ptSemiBold);margin-bottom: 30px;}
+.careerBannerSec > a:hover{background: rgb(66, 40, 27,.46);}
+.careerBannerSec > p >  a{font-size: 16px;line-height: 1em;font-family: var(--inter24ptRegular);}
