@@ -3,7 +3,7 @@
 .careerBannerWrapper{height:900px;background-color:#151412;background-image:url(../images/static/career-bg.svg);background-repeat:no-repeat;background-size:cover;background-position: 50% calc(100% - 60px);}
 .careerBannerWrapper .container{height: 100%;}
 .careerBannerSec{height: 100%;display: flex;align-items: center;justify-content: center;flex-direction: column;text-align: center;color: #fff;}
-.careerBannerSec h1{font-size: 45px;line-height: 1em;font-family: var(--inter24ptSemiBold);margin-bottom: 60px;text-transform: uppercase;}
+.careerBannerSec h1{font-size: 45px;line-height: 1em;font-family: var(--inter24ptSemiBold);margin: 60px 0;text-transform: uppercase;}
 .careerBannerSec span{font-size: 30px;line-height: 1.6em;font-family: var(--inter24ptSemiBold);margin-bottom: 38px;}
 .careerBannerSec span > em{display: block;}
 .careerBannerSec p{font-size: 18px;line-height: 1.4em;font-family: var(--inter24ptRegular);margin-bottom: 50px;}
