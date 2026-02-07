@@ -42,7 +42,7 @@
 .contactGridItem{display: flex;align-items: center;justify-content: center;flex-direction: column;color: #D8D8D8;padding: 80px;background-color: #151412;border-radius: 6px;gap: 60px;}
 .contactGridItem > p{font-size: 18px;line-height: 1.4em;font-family: var(--inter24ptRegular);}
 
-.contactFormWrapper{display: flex;align-items: center;justify-content: center;color: #D8D8D8;}
+.contactFormWrapper{display: flex;align-items: stretch;justify-content: center;color: #D8D8D8;}
 .contactFormSec{background-color: #151412;width: 50%;padding: 80px 200px 80px 0;}
 .contactFormTitle > h2{font-size: 30px;line-height: 1em;font-family: var(--inter24ptSemiBold);margin: 0 0 20px;text-transform: uppercase;}
 .contactFormTitle > p{font-size: 14px;line-height: 1.4em;font-family: var(--inter24ptRegular);}
@@ -62,3 +62,9 @@
 .contactFormGridItem span{vertical-align:middle;margin-right:20px;font-family:var(--inter24ptRegular);font-size:16px;color:#CECECE}
 .contactFormGridItem.msgItem label{position: static;margin-right: 30px;}
 .enquiryFormBtn{background: transparent;border: 1px solid #CECECE;border-radius: 50px;align-items: center;gap: 10px;padding: 16px 24px;transition: all .3s;display: inline-flex;width: max-content;font-size: 16px;font-family: var(--inter24ptSemiBold);color:#CECECE}
+
+.contactDetailsSec{background-color:#000;background-image:url(../images/static/contact-details-bg.svg);background-repeat:no-repeat;background-position: bottom right;background-size: 180%;}
+.contactDetailsGrid{padding: 200px 200px 200px 80px;}
+.contactDetailsGridItem {display: flex;align-items: center;gap: 20px;margin-bottom: 30px;}
+.contactDetailsGridItem > a {display: block;}
+.contactDetailsGridItem > a > em{display: block;font-style: normal;}
