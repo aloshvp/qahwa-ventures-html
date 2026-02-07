@@ -54,7 +54,7 @@
 .contactFormGridItem input:focus ~ label, .contactFormGridItem input:not(:placeholder-shown) ~ label{top: -2px;font-size: 12px;color: #D8D8D8;}
 .error-msg { display: none; color: #C92525; font-size: 12px;font-family: var(--inter24ptRegular);position: relative;top: -15px; }
 .contactFormGridItem.error input { border-bottom-color: #C92525; }
-.contactFormGridItem.error .error-msg { display: block; }
+.contactFormGridItem.error .error-msg { display: block;font-size: 12px;color: #C92525; }
 .contactDetailsSec{width: 50%;}
 .contactFormGridItem input[type="checkbox"]{appearance:none;-webkit-appearance:none;width:15px;height:15px;background-color:transparent;border:1px solid #CECECE;cursor:pointer;position:relative;margin-right:5px;vertical-align:middle}
 .contactFormGridItem input[type="checkbox"]:checked{background-color:transparent}
