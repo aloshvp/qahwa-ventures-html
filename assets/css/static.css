@@ -43,10 +43,17 @@
 .contactGridItem > p{font-size: 18px;line-height: 1.4em;font-family: var(--inter24ptRegular);}
 
 .contactFormWrapper{display: flex;align-items: center;justify-content: center;color: #D8D8D8;}
-.contactFormSec{background-color: #151412;width: 50%;padding: 80px 0;}
+.contactFormSec{background-color: #151412;width: 50%;padding: 80px 200px 80px 0;}
 .contactFormTitle > h2{font-size: 30px;line-height: 1em;font-family: var(--inter24ptSemiBold);margin: 0 0 20px;text-transform: uppercase;}
 .contactFormTitle > p{font-size: 14px;line-height: 1.4em;font-family: var(--inter24ptRegular);}
 .contactFormGrid{margin: 30px 0;}
-.contactFormGridItem {}
+.contactFormGridItem {position: relative;}
+.contactFormGridItem input[type="text"], .contactFormGridItem input[type="email"], .contactFormGridItem input[type="tel"]{width: 100%;background: transparent;border: none;border-bottom: 1px solid #707070;outline: none;color: #D8D8D8;padding: 20px 0;font-size: 18px;font-family: var(--inter24ptRegular);margin-bottom: 20px;}
+.contactFormGridItem label{position: absolute;left: 0;top: 10px;pointer-events: none;transition: 0.3s ease all;color: #D8D8D8;font-family: var(--inter24ptRegular);font-size: 16px;}
+.contactFormGridItem label span { color: #C92525; }
+.contactFormGridItem input:focus ~ label, .contactFormGridItem input:not(:placeholder-shown) ~ label{top: -2px;font-size: 12px;color: #D8D8D8;}
+.error-msg { display: none; color: #C92525; font-size: 12px;font-family: var(--inter24ptRegular);position: relative;top: -15px; }
+.contactFormGridItem.error input { border-bottom-color: #C92525; }
+.contactFormGridItem.error .error-msg { display: block; }
 .contactDetailsSec{width: 50%;}
 

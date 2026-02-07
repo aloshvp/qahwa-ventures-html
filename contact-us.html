@@ -120,22 +120,31 @@
                         <p>Have a question or need support? We’re here to assist you.</p>
                         <p>Complete the form below, and our team will respond at the earliest.</p>
                     </div>
-                    <form action="">
+                    <form action="" id="contactForm" novalidate>
                         <div class="contactFormGrid">
                             <div class="contactFormGridItem">
-                                <input type="text" id="name" name="name" placeholder="Name *" />
+                                <input type="text" id="name" name="name" placeholder=" " />
+                                <label for="name">Name<span>*</span></label>
+                                <span class="error-msg"></span>
                             </div>
                             <div class="contactFormGridItem">
-                                <input type="text" id="phone" name="phone" placeholder="Phone *" />
+                                <input type="tel" id="phone" name="phone" placeholder=" " />
+                                <label for="phone">Phone<span>*</span></label>
+                                <span class="error-msg"></span>
                             </div>
                             <div class="contactFormGridItem">
-                                <input type="email" id="email" name="email" placeholder="Email *" />
+                                <input type="email" id="email" name="email" placeholder=" " />
+                                <label for="email">Email<span>*</span></label>
+                                <span class="error-msg"></span>
                             </div>
                             <div class="contactFormGridItem">
-                                <input type="text" id="subject" name="subject" placeholder="Organization *" />
+                                <input type="text" id="subject" name="subject" placeholder=" " />
+                                <label for="subject">Organization<span>*</span></label>
+                                <span class="error-msg"></span>
                             </div>
                             <div class="contactFormGridItem">
-                                <input type="text" id="interest" name="interest" placeholder="Interest Type" />
+                                <input type="text" id="interest" name="interest" placeholder=" " />
+                                <label for="interest">Interest Type</label>
                             </div>
                             <div class="contactFormGridItem">
                                 <label for="message">Message</label>
