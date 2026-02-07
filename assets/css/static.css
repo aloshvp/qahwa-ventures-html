@@ -42,6 +42,11 @@
 .contactGridItem{display: flex;align-items: center;justify-content: center;flex-direction: column;color: #D8D8D8;padding: 80px;background-color: #151412;border-radius: 6px;gap: 60px;}
 .contactGridItem > p{font-size: 18px;line-height: 1.4em;font-family: var(--inter24ptRegular);}
 
-.contactFormWrapper{display: flex;align-items: center;justify-content: center;}
-.contactFormSec{background-color: #151412;width: 50%;}
+.contactFormWrapper{display: flex;align-items: center;justify-content: center;color: #D8D8D8;}
+.contactFormSec{background-color: #151412;width: 50%;padding: 80px 0;}
+.contactFormTitle > h2{font-size: 30px;line-height: 1em;font-family: var(--inter24ptSemiBold);margin: 0 0 20px;text-transform: uppercase;}
+.contactFormTitle > p{font-size: 14px;line-height: 1.4em;font-family: var(--inter24ptRegular);}
+.contactFormGrid{margin: 30px 0;}
+.contactFormGridItem {}
 .contactDetailsSec{width: 50%;}
+
