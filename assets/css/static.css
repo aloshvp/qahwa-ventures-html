@@ -46,7 +46,7 @@
 .contactFormSec{background-color: #151412;width: 50%;padding: 80px 200px 80px 0;}
 .contactFormTitle > h2{font-size: 30px;line-height: 1em;font-family: var(--inter24ptSemiBold);margin: 0 0 20px;text-transform: uppercase;}
 .contactFormTitle > p{font-size: 14px;line-height: 1.4em;font-family: var(--inter24ptRegular);}
-.contactFormGrid{margin: 30px 0;}
+.contactFormGrid{margin: 30px 0 40px;}
 .contactFormGridItem {position: relative;}
 .contactFormGridItem input[type="text"], .contactFormGridItem input[type="email"], .contactFormGridItem input[type="tel"]{width: 100%;background: transparent;border: none;border-bottom: 1px solid #707070;outline: none;color: #D8D8D8;padding: 20px 0;font-size: 18px;font-family: var(--inter24ptRegular);margin-bottom: 20px;}
 .contactFormGridItem label{position: absolute;left: 0;top: 10px;pointer-events: none;transition: 0.3s ease all;color: #D8D8D8;font-family: var(--inter24ptRegular);font-size: 16px;}
@@ -56,4 +56,9 @@
 .contactFormGridItem.error input { border-bottom-color: #C92525; }
 .contactFormGridItem.error .error-msg { display: block; }
 .contactDetailsSec{width: 50%;}
-
+.contactFormGridItem input[type="checkbox"]{appearance:none;-webkit-appearance:none;width:15px;height:15px;background-color:transparent;border:1px solid #CECECE;cursor:pointer;position:relative;margin-right:5px;vertical-align:middle}
+.contactFormGridItem input[type="checkbox"]:checked{background-color:transparent}
+.contactFormGridItem input[type="checkbox"]:checked::after{content:'';position:absolute;top:1px;left:5px;width:5px;height:10px;border:solid #CECECE;border-width:0 2px 2px 0;transform:rotate(45deg)}
+.contactFormGridItem span{vertical-align:middle;margin-right:20px;font-family:var(--inter24ptRegular);font-size:16px;color:#CECECE}
+.contactFormGridItem.msgItem label{position: static;margin-right: 30px;}
+.enquiryFormBtn{background: transparent;border: 1px solid #CECECE;border-radius: 50px;align-items: center;gap: 10px;padding: 16px 24px;transition: all .3s;display: inline-flex;width: max-content;font-size: 16px;font-family: var(--inter24ptSemiBold);color:#CECECE}
