@@ -105,8 +105,8 @@
 .productsGridItemImageOverlayEnquiry {transform: translateY(20px);opacity: 0;transition: all 0.4s ease;}
 .productsGridItemImageOverlayDescription { transition-delay: 0.1s; width: 100%; }
 .productsGridItemImageOverlayEnquiry { transition-delay: 0.2s; }
-.productsGridItemImageOverlayDescription p{font-size: 14px;line-height: 1.4em;font-family: var(--inter24ptRegular);padding: 15px 0;margin: 0;border-bottom:1px solid #4A4846; color: #fff;}
-.productsGridItemImageOverlayEnquiry{display: flex;gap: 10px; padding: 15px 0;margin: 0;border-bottom: 1px solid #4A4846;width: 100%; color: #fff; align-items: center;}
+.productsGridItemImageOverlayDescription p{font-size: 14px;line-height: 1.4em;font-family: var(--inter24ptRegular);padding: 25px 0;margin: 0 0 5px;border-bottom:1px solid #4A4846; color: #fff;}
+.productsGridItemImageOverlayEnquiry{display: flex;gap: 10px; padding: 5px 0;margin: 0;border-bottom: 1px solid #4A4846;width: 100%; color: #fff; align-items: center;font-size: 14px;line-height: 1.4em;font-family: var(--inter24ptRegular);}
 .productsGridItemImageOverlayEnquiry > img{object-fit: contain;}
 .productsGridItem:hover .productsGridItemImageOverlay{opacity: 1; visibility: visible;}
 .productsGridItem:hover .productsGridItemImageOverlayDescription,
