@@ -247,9 +247,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 ? productsData
                 : productsData.filter(product => product.category === filter);
 
-            filteredProducts.forEach(product => {
+            filteredProducts.forEach((product, index) => {
+                const aosDelay = index * 100; // Staggered delay
                 const productHTML = `
-                    <div class="productsGridItem">
+                    <div class="productsGridItem" data-aos="fade-up" data-aos-delay="${aosDelay}">
                         <div class="productsGridItemImage">
                             <img src="${product.image}" alt="${product.title}" width="308" height="231" class="productImage1" />
                             <a href="javascript://" class="productsGridItemImageOverlay">
@@ -271,6 +272,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 `;
                 productsGrid.innerHTML += productHTML;
             });
+
+            // Refresh AOS to detect new elements
+            setTimeout(() => {
+                AOS.refresh();
+            }, 100);
         };
 
         // Initial Render
