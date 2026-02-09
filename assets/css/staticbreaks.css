@@ -7,6 +7,9 @@
     /*portfolio*/
     .portfolioImg{height: 525px;padding: 80px 80px 100px;}
 
+    /*contact-us*/
+    .contactGrid{gap: 120px;}
+
    
 }
 
@@ -22,7 +25,11 @@
 }
 
 @media screen and (max-width: 1200px) {
+    /*portfolio*/
     .portfolioItem > h5{font-size:30px;}
+
+    /*contact-us*/
+    .contactGrid{gap: 40px;}
 }
 
 
@@ -46,6 +53,19 @@
     .portfolioFooter{padding-top: 60px;}
     .portfolioItem > h5{margin-top: 25px;}
     .portfolioItem>span{margin: 8px 0 20px;}
+
+    /*contact-us*/    
+    .contactBannerWrapper{padding: 120px 0 60px;}
+    .contactTitle h1{font-size: 40px;margin: 20px 0;}
+    .contactTitle p{font-size: 25px;}
+    .contactGrid {grid-template-columns: repeat(2, 1fr);gap: 30px;}
+    .contactGridItem > img{max-width: 80px;}
+    .contactFormWrapper{flex-direction: column;}
+    .contactFormSec{width: 100%;}
+    .contactDetailsSec{width: 100%;}
+    .contactDetailsGrid{padding: 60px 0 20px;}
+    .contactDetailsGridItem{margin-bottom: 40px;}
+    .contactFormSec{padding: 60px 0;}
     
 }
 
@@ -63,6 +83,17 @@
     .portfolioItem > h5{margin-top: 20px;font-size: 25px;}
     .portfolioItem>span{margin: 8px 0 20px;font-size: 18px;}
     .portfolioImg img{max-width: 250px;}
+
+    /*contact-us*/
+    .contactBannerWrapper{padding: 100px 0 60px;}
+    .contactTitle h1{font-size: 35px;}
+    .contactTitle p{font-size: 22px;}
+    .contactGridItem{padding: 40px;gap: 40px;}
+    .contactGridItem>img{max-width: 60px;}
+    .contactDetailsGridItem>a{font-size: 18px;}
+    .contactFormTitle>h2{font-size: 25px;}
+    .contactDetailsGridItem{margin-bottom: 30px;}
+    .contactDetailsGrid{padding: 60px 0 30px;}
    
 
 }
