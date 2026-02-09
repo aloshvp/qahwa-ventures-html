@@ -284,6 +284,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Filter Event Listeners
         const filterLinks = document.querySelectorAll('.productsMenu ul li a');
+        const productsMenuTrigger = document.querySelector('.productsMenuTrigger');
+        const productsMenu = document.querySelector('.productsMenu');
+
+        if (productsMenuTrigger) {
+            productsMenuTrigger.addEventListener('click', () => {
+                productsMenu.classList.toggle('open');
+            });
+
+            // Set initial text
+            const activeLink = document.querySelector('.productsMenu ul li a.active');
+            if (activeLink) {
+                productsMenuTrigger.textContent = activeLink.textContent;
+            }
+        }
+
         filterLinks.forEach(link => {
             link.addEventListener('click', (e) => {
                 e.preventDefault();
@@ -291,6 +306,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 filterLinks.forEach(l => l.classList.remove('active'));
                 // Add active class to clicked
                 link.classList.add('active');
+
+                // For mobile: update trigger text and close dropdown
+                if (productsMenuTrigger && window.innerWidth <= 991) {
+                    productsMenuTrigger.textContent = link.textContent;
+                    productsMenu.classList.remove('open');
+                }
+
                 // Render with filter
                 const filter = link.getAttribute('data-filter');
                 renderProducts(filter);

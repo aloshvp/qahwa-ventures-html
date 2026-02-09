@@ -26,6 +26,12 @@
     .productInfo > a{padding: 20px 30px;}
     .productImageSec .productImage1{left: -180px;max-width: 100%;}
 
+    .productsGrid{gap: 60px;}
+    .productsListContent{gap: 100px;}
+    .productsGridItemImage{padding: 30px;}
+    .productsGridItemImageOverlay{padding: 40px;}
+    .productsGridItemImageOverlayDescription p {padding: 0 0 25px 0;margin: 0 0 25px;font-size: 14px;}
+
 }
 
 @media screen and (min-width: 1300px) {
@@ -41,6 +47,10 @@
     .contactGrid{gap: 30px;}
     .contactGridItem{padding: 50px;}
     .contactGridItem > em{display: block;width: 75px;height: 75px;}
+
+    .productsGrid {grid-template-columns: repeat(2, 1fr);}
+    .productsGridItemContent>p{font-size: 25px;}
+    .productsGridItemContent>span{font-size: 16px;}
 }
 
 
@@ -77,6 +87,17 @@
     .contactDetailsGrid{padding: 60px 0 20px;}
     .contactDetailsGridItem{margin-bottom: 40px;}
     .contactFormSec{padding: 60px 0;}
+
+    /*Products*/
+    .productsListWrap{padding: 60px 0;}
+    .productsListContent { flex-direction: column; gap: 40px; }
+    .productsMenu { width: 100%; position: relative; z-index: 9; }
+    .productsMenuTrigger { display: flex; align-items: center; justify-content: space-between; background: #151412; border: 1px solid #4A4846; padding: 15px 20px; font-family: var(--inter18ptRegular); color: #D8D8D8; cursor: pointer; position: relative; font-size: 18px;border-radius: 3px; }
+    .productsMenuTrigger::after { content: ''; width: 0; height: 0; border-left: 6px solid transparent; border-right: 6px solid transparent; border-top: 6px solid #D8D8D8; transition: transform 0.3s ease; }
+    .productsMenu.open .productsMenuTrigger::after { transform: rotate(180deg); }
+    .productsMenu ul { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #151412; border: 1px solid #4A4846; border-top: none; padding: 0; margin: 0; list-style: none; }
+    .productsMenu.open ul { display: block; }
+    .productsMenu ul li a { border-bottom: 1px solid #2a2a2a; padding: 15px 20px; margin: 0; color: #D8D8D8;}
     
 }
 
@@ -152,6 +173,8 @@
 
     /*Products*/
     .productTitle > h3{font-size: 28px;}
+    .productsGrid {grid-template-columns: repeat(1, 1fr);}
+    .productsMenu ul li a{font-size: 16px;}
 
 
 }
