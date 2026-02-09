@@ -128,9 +128,7 @@
     .contactFormGridItem.msgItem label{margin-right: 20px;}
     .contactFormGridItem input[type="checkbox"]{margin-right: 2px;width: 12px;height: 12px;}
     .contactFormGridItem span{font-size: 15px;}
-    .contactFormGridItem input[type="text"],
-    .contactFormGridItem input[type="email"],
-    .contactFormGridItem input[type="tel"]{padding: 18px 0;font-size: 15px;margin-bottom: 18px;}
+    .contactFormGridItem input[type="text"],.contactFormGridItem input[type="email"],.contactFormGridItem input[type="tel"]{padding: 18px 0;font-size: 15px;margin-bottom: 18px;}
     .contactFormGridItem label{font-size: 15px;}
 
 
