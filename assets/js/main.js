@@ -232,7 +232,7 @@ document.addEventListener("DOMContentLoaded", () => {
             },
             {
                 id: 6,
-                category: 'compatible-capsules',
+                category: 'moka-line',
                 image: 'assets/images/products/decaffe_capsule_10.png',
                 title: 'Decaffe',
                 subtitle: 'Organic Coffee Beans',
