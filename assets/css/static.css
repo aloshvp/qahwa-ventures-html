@@ -91,3 +91,17 @@
 .productSwiperSliderBtn.productSwiperNextBtn{background-image:url(../images/static/right-arrow.png)}
 .productSwiperSliderBtn:hover{transform:scale(1.05);opacity:.8} 
 
+.productsListWrap{padding: 90px 0;background-color: #151412;}
+.productsListContent{display: flex;align-items: flex-start;gap: 100px;color: #fff;}
+.productsMenu{width: 20%;}
+.productsMenu ul li a{font-size: 20px;line-height: 1.4em;font-family: var(--inter18ptRegular);color: #D8D8D8;display: block;border-bottom: 1px solid #4A4846;padding-bottom:15px;margin-bottom: 25px;transition: all 0.3s ease;}
+.productsMenu ul li a:hover{color: var(--yellow);}
+.productsMenu ul li a.active{color: var(--yellow);}
+
+.productsGrid{display: grid;grid-template-columns: repeat(3, 1fr);gap: 60px;justify-content: space-between;}
+.productsGridItemImage{background-color: #000;padding: 30px;display: flex;align-items: center;gap: 20px;justify-content: center; position: relative;}
+.productsGridItemImageOverlay{display: none; position: absolute; inset: 0; background: rgba(0,0,0,0.7); align-items: center; justify-content: center; flex-direction: column;}
+.productsGridItemImageOverlay a { color: #fff; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.productsGridItemImage:hover .productsGridItemImageOverlay{display: flex;}
+.productsGridItemContent > p{font-size: 30px;line-height: 1.4em;font-family: var(--inter18ptMedium);color: #D8D8D8;margin: 15px 0 0;}
+.productsGridItemContent > span {font-size: 18px;line-height: 1.4em;font-family: var(--inter18ptMedium);color: #D8D8D8;display: block;margin-bottom: 0;}

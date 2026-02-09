@@ -23,10 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 delay: 8000,
                 disableOnInteraction: false
             },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true
-            },
             navigation: {
                 prevEl: '.productSwiperPrevBtn',
                 nextEl: '.productSwiperNextBtn'
@@ -183,6 +179,100 @@ document.addEventListener("DOMContentLoaded", () => {
             } else if (firstErrorInput) {
                 firstErrorInput.focus();
             }
+        });
+    }
+    // Product Filtering Logic
+    const productsGrid = document.querySelector('.productsGrid');
+    if (productsGrid) {
+        const productsData = [
+            {
+                id: 1,
+                category: 'whole-beans',
+                image: 'assets/images/home/beans.png',
+                title: 'Biologica',
+                subtitle: 'Organic Coffee Beans'
+            },
+            {
+                id: 2,
+                category: 'whole-beans',
+                image: 'assets/images/home/beans.png',
+                title: 'Top Original Grains',
+                subtitle: 'Elegant and Refined'
+            },
+            {
+                id: 3,
+                category: 'compatible-capsules',
+                image: 'assets/images/home/beans.png',
+                title: 'Capsule Intenso',
+                subtitle: 'Rich and Creamy'
+            },
+            {
+                id: 4,
+                category: 'moka-line',
+                image: 'assets/images/home/beans.png',
+                title: 'Moka Classico',
+                subtitle: 'Traditional Taste'
+            },
+            {
+                id: 5,
+                category: 'espresso-line',
+                image: 'assets/images/home/beans.png',
+                title: 'Espresso Bar',
+                subtitle: 'Authentic Italian Espresso'
+            },
+            {
+                id: 6,
+                category: 'compatible-capsules',
+                image: 'assets/images/home/beans.png',
+                title: 'Capsule Decaf',
+                subtitle: 'Smooth without Caffeine'
+            },
+        ];
+
+        const renderProducts = (filter) => {
+            productsGrid.innerHTML = '';
+            const filteredProducts = filter === 'all'
+                ? productsData
+                : productsData.filter(product => product.category === filter);
+
+            filteredProducts.forEach(product => {
+                const productHTML = `
+                    <div class="productsGridItem">
+                        <div class="productsGridItemImage">
+                            <img src="${product.image}" alt="${product.title}" width="308" height="231" class="productImage1" />
+                            <div class="productsGridItemImageOverlay">
+                                <a href="javascript://">
+                                    <img src="assets/images/home/whatsapp.svg" alt="whatsapp" width="25" height="25" />
+                                    Enquiry by Whatsapp
+                                </a>
+                            </div>
+                        </div>
+                        <div class="productsGridItemContent">
+                            <p>${product.title}</p>
+                            <span>${product.subtitle}</span>
+                        </div>
+                    </div>
+                `;
+                productsGrid.innerHTML += productHTML;
+            });
+        };
+
+        // Initial Render
+        renderProducts('all');
+
+        // Filter Event Listeners
+        const filterLinks = document.querySelectorAll('.productsMenu ul li a');
+        filterLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                // Remove active class from all
+                filterLinks.forEach(l => l.classList.remove('active'));
+                // Add active class to clicked
+                link.classList.add('active');
+                // Render with filter
+                const filter = link.getAttribute('data-filter');
+                renderProducts(filter);
+            });
         });
     }
 });
