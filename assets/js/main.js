@@ -188,44 +188,56 @@ document.addEventListener("DOMContentLoaded", () => {
             {
                 id: 1,
                 category: 'whole-beans',
-                image: 'assets/images/home/beans.png',
+                image: 'assets/images/products/bio_500g.png',
                 title: 'Biologica',
-                subtitle: 'Organic Coffee Beans'
+                subtitle: 'Organic Coffee Beans',
+                description1: 'A Blend of Arabica and Robusta Coffee with full-bodied and Intense Taste with Notes of Cocoa and gingerbread.',
+                description2: 'Capsule in alluminio 80% riciclato compatibili Nespresso®',
             },
             {
                 id: 2,
                 category: 'whole-beans',
-                image: 'assets/images/home/beans.png',
-                title: 'Top Original Grains',
-                subtitle: 'Elegant and Refined'
+                image: 'assets/images/products/cremoso_grani_1kg_3-4_dx.png',
+                title: 'Cremoso',
+                subtitle: 'Organic Coffee Beans',
+                description1: 'A Blend of Arabica and Robusta Coffee with full-bodied and Intense Taste with Notes of Cocoa and gingerbread.',
+                description2: 'Capsule in alluminio 80% riciclato compatibili Nespresso®',
             },
             {
                 id: 3,
                 category: 'compatible-capsules',
-                image: 'assets/images/home/beans.png',
-                title: 'Capsule Intenso',
-                subtitle: 'Rich and Creamy'
+                image: 'assets/images/products/top_originale_lattina_250.png',
+                title: 'Originale',
+                subtitle: 'Organic Coffee Beans',
+                description1: 'A Blend of Arabica and Robusta Coffee with full-bodied and Intense Taste with Notes of Cocoa and gingerbread.',
+                description2: 'Capsule in alluminio 80% riciclato compatibili Nespresso®',
             },
             {
                 id: 4,
-                category: 'moka-line',
-                image: 'assets/images/home/beans.png',
-                title: 'Moka Classico',
-                subtitle: 'Traditional Taste'
+                category: 'espresso-line',
+                image: 'assets/images/products/Espresso-Bar.png',
+                title: 'Espresso Bar',
+                subtitle: 'Organic Coffee Beans',
+                description1: 'A Blend of Arabica and Robusta Coffee with full-bodied and Intense Taste with Notes of Cocoa and gingerbread.',
+                description2: 'Capsule in alluminio 80% riciclato compatibili Nespresso®',
             },
             {
                 id: 5,
-                category: 'espresso-line',
-                image: 'assets/images/home/beans.png',
-                title: 'Espresso Bar',
-                subtitle: 'Authentic Italian Espresso'
+                category: 'compatible-capsules',
+                image: 'assets/images/products/gran_aroma_grani_1Kg.png',
+                title: 'Gran Aroma',
+                subtitle: 'Organic Coffee Beans',
+                description1: 'A Blend of Arabica and Robusta Coffee with full-bodied and Intense Taste with Notes of Cocoa and gingerbread.',
+                description2: 'Capsule in alluminio 80% riciclato compatibili Nespresso®',
             },
             {
                 id: 6,
                 category: 'compatible-capsules',
-                image: 'assets/images/home/beans.png',
-                title: 'Capsule Decaf',
-                subtitle: 'Smooth without Caffeine'
+                image: 'assets/images/products/decaffe_capsule_10.png',
+                title: 'Decaffe',
+                subtitle: 'Organic Coffee Beans',
+                description1: 'A Blend of Arabica and Robusta Coffee with full-bodied and Intense Taste with Notes of Cocoa and gingerbread.',
+                description2: 'Capsule in alluminio 80% riciclato compatibili Nespresso®',
             },
         ];
 
@@ -240,12 +252,16 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div class="productsGridItem">
                         <div class="productsGridItemImage">
                             <img src="${product.image}" alt="${product.title}" width="308" height="231" class="productImage1" />
-                            <div class="productsGridItemImageOverlay">
-                                <a href="javascript://">
-                                    <img src="assets/images/home/whatsapp.svg" alt="whatsapp" width="25" height="25" />
-                                    Enquiry by Whatsapp
-                                </a>
-                            </div>
+                            <a href="javascript://" class="productsGridItemImageOverlay">
+                            <div class="productsGridItemImageOverlayDescription">                                
+                                <p>${product.description1}</p>  
+                                <p>${product.description2}</p>   
+                                </div>  
+                                <div class='productsGridItemImageOverlayEnquiry'>           
+                                <img src="assets/images/products/whatsapp.png" alt="whatsapp" width="17" height="17" />
+                                Enquiry by Whatsapp
+                                </div>                                
+                            </a>
                         </div>
                         <div class="productsGridItemContent">
                             <p>${product.title}</p>
