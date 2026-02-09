@@ -16,6 +16,8 @@
 @media screen and (min-width: 1440px) {
 
     /*career*/
+    .contactFormSec {padding: 80px 200px 80px 0;}
+    .contactDetailsGrid {padding: 200px 200px 200px 80px;}
 
 }
 
@@ -29,7 +31,9 @@
     .portfolioItem > h5{font-size:30px;}
 
     /*contact-us*/
-    .contactGrid{gap: 40px;}
+    .contactGrid{gap: 30px;}
+    .contactGridItem{padding: 50px;}
+    .contactGridItem > em{display: block;width: 75px;height: 75px;}
 }
 
 
