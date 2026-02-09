@@ -19,6 +19,13 @@
     .contactFormSec {padding: 80px 200px 80px 0;}
     .contactDetailsGrid {padding: 200px 200px 200px 80px;}
 
+    /*Product*/
+    .productTitle > h3{font-size: 80px;margin: 5px 0 75px;}
+    .productInfo > p{font-size: 40px;}
+    .productImageSec{max-width: 100%;}
+    .productInfo > a{padding: 20px 30px;}
+    .productImageSec .productImage1{left: -180px;max-width: 100%;}
+
 }
 
 @media screen and (min-width: 1300px) {
@@ -98,6 +105,14 @@
     .contactFormTitle>h2{font-size: 25px;}
     .contactDetailsGridItem{margin-bottom: 30px;}
     .contactDetailsGrid{padding: 60px 0 30px;}
+
+    /*Products*/
+    .productContent{flex-direction: column;gap: 35px;padding: 60px 0 105px;text-align: center;}
+    .productTitle > h3{margin: 20px 0;}
+    .productTitle > h3 > em{display: inline-block;}
+    .productImageSec{margin: 0 auto;}
+    .productInfo{text-align: center;width: 100%;}
+    .productSwiperSliderNav{bottom:55px;}  
    
 
 }
@@ -134,6 +149,9 @@
     .contactFormGridItem span{font-size: 15px;}
     .contactFormGridItem input[type="text"],.contactFormGridItem input[type="email"],.contactFormGridItem input[type="tel"]{padding: 18px 0;font-size: 15px;margin-bottom: 18px;}
     .contactFormGridItem label{font-size: 15px;}
+
+    /*Products*/
+    .productTitle > h3{font-size: 28px;}
 
 
 }

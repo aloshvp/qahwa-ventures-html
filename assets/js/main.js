@@ -12,6 +12,26 @@ document.addEventListener("DOMContentLoaded", () => {
             loop: true,
             effect: "fade"
         });
+
+        // Product Swiper
+        const productSwiper = new Swiper('.productSwiper', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            effect: "fade",
+            autoplay: {
+                delay: 8000,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+            navigation: {
+                prevEl: '.productSwiperPrevBtn',
+                nextEl: '.productSwiperNextBtn'
+            }
+        });
     }
 
     // Helper to load components
