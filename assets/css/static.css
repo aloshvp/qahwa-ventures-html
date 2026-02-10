@@ -125,3 +125,16 @@
 .aboutBannerContent h1{margin: 0;margin-bottom: 60px;}
 .aboutBannerContent p{font-size: 18px;line-height: 1.5em;font-family: var(--inter18ptRegular);color: #D8D8D8;}
 
+.aboutMapWrap{background-color: #000000;padding: 150px 0;}
+.aboutMapContent{position: relative; z-index: 1;color: #fff;}
+.aboutMapContent:before{content:"";position: absolute;left: 50%;top: 60%;transform: translate(-50%, -50%);background: radial-gradient(ellipse at center, #d8d8d8 0%, rgba(216, 216, 216, 0) 70%);width: 60%; padding-bottom: 50%; z-index: -1; border-radius: 50%;}
+.aboutMapContent > h2{color: #fff;font-size: 45px;line-height: 1em;font-family: var(--inter24ptSemiBold);margin-bottom: 60px;}
+.aboutMapImg{max-width:900px;margin: 30px auto;}
+.aboutMapContentLft{position: absolute;left: 0;top: 50%;transform: translateY(-50%);border: 1px solid #707070;padding: 25px;max-width: 300px;}
+.aboutMapContentLft > span{font-size: 20px;line-height: 1.4em;font-family: var(--inter24ptSemiBold);color: #D8D8D8;display: block;margin-bottom: 10px;transition: all 0.3s ease;}
+.aboutMapContentLft > p{font-size: 57px;line-height: 1em;font-family: var(--inter24ptSemiBold);color: #D8D8D8;display: block;margin-bottom: 0;transition: all 0.3s ease;}
+.aboutMapContentRgt{position: absolute;right: 20%;top: 15%;border: 1px solid #707070;padding: 25px;max-width: 300px;}
+.aboutMapContentRgt > span{font-size: 20px;line-height: 1.4em;font-family: var(--inter24ptSemiBold);color: #D8D8D8;display: block;margin-bottom: 10px;transition: all 0.3s ease;}
+.aboutMapContentRgt > p{font-size: 57px;line-height: 1em;font-family: var(--inter24ptSemiBold);color: #D8D8D8;display: block;margin-bottom: 0;transition: all 0.3s ease;}
+.aboutMapContentFull{position: absolute;right: 20%;bottom: -13%;max-width: 550px;}
+.aboutMapContentFull > span{font-size: 18px;line-height: 1.6em;font-family: var(--inter18ptRegular);color: #D8D8D8;display: block;margin-bottom: 0;transition: all 0.3s ease;}
