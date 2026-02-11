@@ -126,9 +126,14 @@
 .aboutBannerContent p{font-size: 18px;line-height: 1.5em;font-family: var(--inter18ptRegular);color: #D8D8D8;}
 
 .ourExpertiseWrap{padding: 100px 0;background-color: #151412;color:#E3E2DE;}
+.ourExpertiseTitle{margin-bottom: 180px;}
+.ourExpertiseTitle > h2{font-size: 45px;line-height: 1em;font-family: var(--inter24ptSemiBold);color: #D8D8D8;text-align: center;}
 .ourExpertiseContent{display: grid;grid-template-columns: repeat(2,1fr);gap: 60px;}
 .ourExpertiseImgGrid{display: grid;grid-template-columns: repeat(2,1fr);gap: 60px;}
-.ourExpertiseImgGrid.threeItem{grid-template-columns: repeat(3,1fr);}     
+.ourExpertiseImgGrid.threeItem{grid-template-columns: repeat(3,1fr);}
+.ourExpertiseContentItem > h3{font-size: 35px;line-height: 1.2em;font-family: var(--inter24ptSemiBold);color: #D8D8D8;}
+.ourExpertiseContentItem > h3 > em{display: block;}
+.ourExpertiseContentItem > p {font-size: 14px;line-height: 1.5em;font-family: var(--inter18ptRegular);color: #D8D8D8;margin: 0;}
 
 .aboutMapWrap{background-color: #000000;padding: 150px 0;}
 .aboutMapContent{position: relative; z-index: 1;color: #fff;}
