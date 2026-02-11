@@ -125,6 +125,11 @@
 .aboutBannerContent h1{margin: 0;margin-bottom: 60px;}
 .aboutBannerContent p{font-size: 18px;line-height: 1.5em;font-family: var(--inter18ptRegular);color: #D8D8D8;}
 
+.ourExpertiseWrap{padding: 100px 0;background-color: #151412;color:#E3E2DE;}
+.ourExpertiseContent{display: grid;grid-template-columns: repeat(2,1fr);gap: 60px;}
+.ourExpertiseImgGrid{display: grid;grid-template-columns: repeat(2,1fr);gap: 60px;}
+.ourExpertiseImgGrid.threeItem{grid-template-columns: repeat(3,1fr);}     
+
 .aboutMapWrap{background-color: #000000;padding: 150px 0;}
 .aboutMapContent{position: relative; z-index: 1;color: #fff;}
 .aboutMapContent:before{content:"";position: absolute;left: 50%;top: 60%;transform: translate(-50%, -50%);background: radial-gradient(ellipse at center, #d8d8d8 0%, rgba(216, 216, 216, 0) 70%);width: 60%; padding-bottom: 50%; z-index: -1; border-radius: 50%;}
