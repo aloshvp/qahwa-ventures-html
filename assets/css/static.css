@@ -129,11 +129,14 @@
 .ourExpertiseTitle{margin-bottom: 180px;}
 .ourExpertiseTitle > h2{font-size: 45px;line-height: 1em;font-family: var(--inter24ptSemiBold);color: #D8D8D8;text-align: center;}
 .ourExpertiseContent{display: grid;grid-template-columns: repeat(2,1fr);gap: 60px;}
-.ourExpertiseImgGrid{display: grid;grid-template-columns: repeat(2,1fr);gap: 60px;}
+.ourExpertiseImgGrid{display: grid;grid-template-columns: repeat(2,1fr);gap: 60px;margin: 45px 0 0;max-width: 430px;}
 .ourExpertiseImgGrid.threeItem{grid-template-columns: repeat(3,1fr);}
-.ourExpertiseContentItem > h3{font-size: 35px;line-height: 1.2em;font-family: var(--inter24ptSemiBold);color: #D8D8D8;}
+.ourExpertiseContentItem > h3{font-size: 35px;line-height: 1.2em;font-family: var(--inter24ptSemiBold);margin-bottom: 10px;}
 .ourExpertiseContentItem > h3 > em{display: block;}
-.ourExpertiseContentItem > p {font-size: 14px;line-height: 1.5em;font-family: var(--inter18ptRegular);color: #D8D8D8;margin: 0;}
+.ourExpertiseContentItem > p {font-size: 14px;line-height: 1.5em;font-family: var(--inter18ptRegular);margin: 0;}
+.ourExpertiseContentItem > p >em{display: block;}
+.ourExpertiseImgGridItemContent > h4{font-size: 18px;line-height: 1.4em;font-family: var(--inter18ptRegular);margin: 30px 0 0;}
+.ourExpertiseImgGridItem{display: flex;flex-direction: column;justify-content: center;align-items: center;}
 
 .aboutMapWrap{background-color: #000000;padding: 150px 0;}
 .aboutMapContent{position: relative; z-index: 1;color: #fff;}
