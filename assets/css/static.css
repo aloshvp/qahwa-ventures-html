@@ -141,8 +141,10 @@
 .ourExpertiseContentItem > span{font-size: 25px;line-height: 1.5em;font-family: var(--inter24ptSemiBold);margin-bottom: 10px;}
 .ourExpertiseContentItem > p{font-size: 18px;line-height: 1.5em;font-family: var(--inter24ptRegular);margin-bottom: 10px;}
 .ourExpertiseContentItem > ul{margin: 0;padding: 0;}
-.ourExpertiseContentItem > ul > li{border-bottom: 1px solid #707070;font-size: 14px;line-height: 1.5em;padding:15px 0;display: flex;gap: 15px;align-items: center;max-width: 500px;}
+.ourExpertiseContentItem > ul > li{border-bottom: 1px solid #707070;font-size: 14px;line-height: 1.5em;padding:20px 0;display: flex;gap: 15px;align-items: center;max-width: 500px;position: relative;margin-left: 35px;}
+.ourExpertiseContentItem > ul > li > span{position: absolute;left: -35px;}
 .ourExpertiseContentItem > em{font-style: normal;display: block;margin-top: 35px;font-size: 14px;line-height: 1.5em;font-family: var(--inter18ptRegular);}
+
 
 .aboutMapWrap{background-color: #000000;padding: 150px 0;}
 .aboutMapContent{position: relative; z-index: 1;color: #fff;}
