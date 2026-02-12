@@ -26,6 +26,10 @@ img.headerLogoImg{max-width: 100px;position: relative;top: -25px;transition: all
 .headerWrap .headerNavLinks{justify-content:flex-start}
 .headerWrap .navLinksList{width:100%;justify-content:flex-start;align-items:center}
 .headerWrap .headerLogoSec{margin-left:calc(50% - 50px);margin-right:auto;transition:all .5s cubic-bezier(0.25,0.46,0.45,0.94)}
+.headerWrap.staticHeaderWrap .headerLogoSec{margin-left:0;transition:all .5s cubic-bezier(0.25,0.46,0.45,0.94)}
+.headerWrap.staticHeaderWrap .hamburger{left: unset;right: 60px;}
+.staticMobileSidebar .sidebarContent{left: unset; right: 0px; transform: translateX(100%); }
+.staticMobileSidebar .sidebarContent .hamburger{left: unset; right: 60px;position: absolute;}
 .headerWrap.scrolled .headerLogoSec{margin-left:0;margin-right:auto}
 .headerWrap.scrolled img.headerLogoImg{transform-origin:left center;top:0;max-width: 80px;}
 .headerWrap.scrolled .hamburger{opacity:0;pointer-events:none;visibility:hidden;transition:all .3s ease}
