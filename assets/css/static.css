@@ -127,7 +127,7 @@
 
 .ourExpertiseWrap{padding: 100px 0 160px;background-color: #151412;color:#E3E2DE;position: relative;}
 .expertiseLine{position: absolute;top: 15%;left: 45%;transform: translateX(-50%);z-index: 1;}
-.expertiseLine.line2{top:unset;bottom: 23%;left: 45%;transform: translateX(-50%);z-index: 1;}
+.expertiseLine.line2{top:unset;bottom: 19%;left: 45%;transform: translateX(-50%);z-index: 1;}
 .ourExpertiseTitle{margin-bottom: 180px;}
 .ourExpertiseTitle > h2{font-size: 45px;line-height: 1em;font-family: var(--inter24ptSemiBold);color: #D8D8D8;text-align: center;}
 .ourExpertiseContent{display: grid;grid-template-columns: repeat(2,1fr);gap: 160px;}
