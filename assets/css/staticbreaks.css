@@ -100,6 +100,12 @@
     .productsMenu.open ul { display: block; }
     .productsMenu ul li a { border-bottom: 1px solid #2a2a2a; padding: 15px 20px; margin: 0; color: #D8D8D8;}
     
+    /*about-us*/
+    .expertiseLine{display: none;}
+    .ourExpertiseTitle{margin-bottom: 80px;}
+    .ourExpertiseContent{grid-template-columns: repeat(1, 1fr);gap: 80px;}
+    .ourExpertiseContentItem>h3>em{display: inline-block;}
+    .ourExpertiseContentItem.item4{text-align: left;align-items: flex-start;}
 }
 
 @media only screen and (max-width: 767px) {  
