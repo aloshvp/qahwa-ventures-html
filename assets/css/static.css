@@ -125,18 +125,20 @@
 .aboutBannerContent h1{margin: 0;margin-bottom: 60px;}
 .aboutBannerContent p{font-size: 18px;line-height: 1.5em;font-family: var(--inter18ptRegular);color: #D8D8D8;}
 
-.ourExpertiseWrap{padding: 100px 0 160px;background-color: #151412;color:#E3E2DE;}
+.ourExpertiseWrap{padding: 100px 0 160px;background-color: #151412;color:#E3E2DE;position: relative;}
+.expertiseLine{position: absolute;top: 15%;left: 45%;transform: translateX(-50%);z-index: 1;}
+.expertiseLine.line2{top:unset;bottom: 23%;left: 45%;transform: translateX(-50%);z-index: 1;}
 .ourExpertiseTitle{margin-bottom: 180px;}
 .ourExpertiseTitle > h2{font-size: 45px;line-height: 1em;font-family: var(--inter24ptSemiBold);color: #D8D8D8;text-align: center;}
 .ourExpertiseContent{display: grid;grid-template-columns: repeat(2,1fr);gap: 160px;}
-.ourExpertiseImgGrid{display: grid;grid-template-columns: repeat(2,1fr);gap: 60px;margin: 45px 0 0;max-width: 560px;}
+.ourExpertiseImgGrid{display: grid;grid-template-columns: repeat(2,1fr);gap: 60px;margin: 80px 0 0;max-width: 560px;}
 .ourExpertiseImgGrid.threeItem{grid-template-columns: repeat(3,1fr);max-width: 860px;}
 .ourExpertiseContentItem.item4 { text-align: right; display: flex; flex-direction: column; align-items: flex-end; }
 .ourExpertiseContentItem > h3{font-size: 35px;line-height: 1.2em;font-family: var(--inter24ptSemiBold);margin-bottom: 10px;}
 .ourExpertiseContentItem > h3 > em{display: block;}
 .ourExpertiseContentItem > p {font-size: 14px;line-height: 1.5em;font-family: var(--inter18ptRegular);margin: 0;}
 .ourExpertiseContentItem > p >em{display: block;}
-.ourExpertiseImgGridItemContent > h4{font-size: 18px;line-height: 1.4em;font-family: var(--inter18ptRegular);margin: 30px 0 0;}
+.ourExpertiseImgGridItemContent > h4{font-size: 16px;line-height: 1.4em;font-family: var(--inter18ptRegular);margin: 30px 0 0;}
 .ourExpertiseImgGridItem{display: flex;flex-direction: column;justify-content: center;align-items: center;}
 .ourExpertiseContentItem > span{font-size: 25px;line-height: 1.5em;font-family: var(--inter24ptSemiBold);margin-bottom: 10px;}
 .ourExpertiseContentItem > p{font-size: 18px;line-height: 1.5em;font-family: var(--inter24ptRegular);margin-bottom: 10px;}
