@@ -158,10 +158,16 @@
     .productInfo{text-align: center;width: 100%;}
     .productSwiperSliderNav{bottom:55px;}  
 
-    /*about-us*/
-    .ourExpertiseTitle{margin-bottom: 60px;}
-    .ourExpertiseContent{gap: 60px;}
-    .ourExpertiseContentItem>h3{font-size: 25px;}
+    /*about-us*/        
+    .aboutBannerContent{gap: 15px;}
+    .aboutBannerContent h1{margin-bottom: 0;}
+    .aboutBannerContent h1>img{max-width: 160px;}
+    .aboutBannerContent p{font-size: 16px;}
+    .ourExpertiseWrap{padding: 60px 0;}
+    .ourExpertiseTitle{margin-bottom: 40px;}
+    .ourExpertiseTitle>h2{font-size: 35px;}
+    .ourExpertiseContent{gap: 50px;}
+    .ourExpertiseContentItem>h3{font-size: 22px;}
     .ourExpertiseContentItem>p{font-size: 16px;}
     .ourExpertiseContentItem>p>em{display: inline-block;}
     .ourExpertiseImgGrid{max-width: 100%;gap: 40px;margin: 40px 0 0;}
@@ -169,7 +175,16 @@
     .ourExpertiseContentItem>ul>li{padding: 15px 0;max-width: 100%;margin: 0 60px 0 35px;}
     .ourExpertiseImgGrid.threeItem{grid-template-columns: repeat(2, 1fr);}
     .ourExpertiseImgGridItem{text-align: center;}
-   
+    .aboutMapWrap{padding: 60px 0;}
+    .aboutMapImg{margin: 60px auto;}
+    .aboutMapContent>h2{font-size: 30px;}
+    .aboutMapContent:before{top: 35%;}
+    .aboutMapContentRgt{position: static;max-width: 100%;margin: 0 0 40px;}
+    .aboutMapContentLft{position: static;max-width: 100%;margin:0 0 20px ;}
+    .aboutMapContentFull{position: static;max-width: 100%;}
+    .aboutMapContentFull>span{font-size: 16px;}
+    .aboutMapContentLft>p,.aboutMapContentRgt>p{font-size: 18px;}
+    .aboutMapContentRgt{margin: 0 0 30px;}
 
 }
 
