@@ -320,3 +320,57 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+// Expertise Smooth Scroll Logic
+
+// Expertise Smooth Scroll Logic
+const initExpertiseSmoothScroll = () => {
+    // Select all links with the class 'expertiseLink'
+    const expertiseLinks = document.querySelectorAll('.expertiseLink');
+    if (expertiseLinks.length > 0) {
+        expertiseLinks.forEach(link => {
+            // Remove existing listener to prevent duplicates (though basic addEventListener doesn't dedup anonymous functions, this architecture relies on re-running for new elements)
+            // Ideally we'd valid if attached, but for now we just attach. 
+            // Better approach: Delegated event listener at document level.
+        });
+    }
+};
+
+// Delegated Event Listener for Expertise Links (Handles static and dynamic content)
+document.addEventListener('click', (e) => {
+    const link = e.target.closest('.expertiseLink');
+    if (link) {
+        e.preventDefault();
+
+        // Check if the current page is about-us.html
+        if (window.location.pathname.includes('about-us.html') || document.getElementById('our-expertise')) {
+            const targetSection = document.getElementById('our-expertise');
+            if (targetSection) {
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+                // Update URL hash without page reload
+                history.pushState(null, null, '#our-expertise');
+            }
+        } else {
+            // Navigate to about-us.html with hash
+            window.location.href = 'about-us.html#our-expertise';
+        }
+    }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Handle initial load with hash
+    if (window.location.hash === '#our-expertise') {
+        const checkAndScroll = () => {
+            const section = document.getElementById('our-expertise');
+            if (section) {
+                setTimeout(() => {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                }, 300); // Slight delay for rendering
+            }
+        };
+
+        // Check immediately and also after delay to be safe
+        checkAndScroll();
+        setTimeout(checkAndScroll, 800);
+    }
+});
