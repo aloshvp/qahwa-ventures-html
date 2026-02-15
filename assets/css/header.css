@@ -67,7 +67,8 @@ img.headerLogoImg{max-width: 100px;position: relative;top: -25px;transition: all
 .mobileSidebar.active .sidebarNavList li:nth-child(6) { transition-delay: 0.35s; }
 
 .sidebarNavList a{color:var(--yellow);text-decoration:none;font-size:18px;line-height: 1em;transition:color .3s ease;display:block;padding:0 0 30px;}
-.sidebarNavList a:hover{text-shadow: 0 0 10px rgba(235, 158, 1, 0.6);}
+/* .sidebarNavList a:hover{text-shadow: 0 0 10px rgba(235, 158, 1, 0.6);} */
+.sidebarNavList a:hover{color: #fff;}
 .sidebarNavList li:last-child a{padding: 0;}
 .sidebarContent .hamburger{position: static; margin-bottom: 20px;}
 .sidebarContactInfo{border-bottom: 1px solid var(--yellow);padding: 60px 0;}
