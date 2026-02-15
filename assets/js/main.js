@@ -374,3 +374,9 @@ document.addEventListener("DOMContentLoaded", () => {
         setTimeout(checkAndScroll, 800);
     }
 });
+
+
+// MatchHeight for blog posts
+$(function () {
+    $('.blogItem > p').matchHeight();
+});
