@@ -96,7 +96,7 @@
 .productsMenu{width: 30%;}
 .productsMenu ul li a{font-size: 20px;line-height: 1.4em;font-family: var(--inter18ptRegular);color: var(--yellow);display: block;border-bottom: 1px solid #4A4846;padding-bottom:15px;margin-bottom: 25px;transition: all 0.3s ease;}
 .productsMenu ul li a:hover{color: var(--yellow);}
-.productsMenu ul li a.active{color: var(--yellow);}
+.productsMenu ul li a.active{color: #fff;}
 .productsMenuTrigger{display: none;}
 
 .productsGrid{display: grid;grid-template-columns: repeat(3, 1fr);gap: 25px;justify-content: space-between;}
