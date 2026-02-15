@@ -93,12 +93,12 @@
     .productsListWrap{padding: 60px 0;}
     .productsListContent { flex-direction: column; gap: 40px; }
     .productsMenu { width: 100%; position: relative; z-index: 9; }
-    .productsMenuTrigger { display: flex; align-items: center; justify-content: space-between; background: #151412; border: 1px solid #4A4846; padding: 15px 20px; font-family: var(--inter18ptRegular); color: #D8D8D8; cursor: pointer; position: relative; font-size: 18px;border-radius: 3px; }
-    .productsMenuTrigger::after { content: ''; width: 0; height: 0; border-left: 6px solid transparent; border-right: 6px solid transparent; border-top: 6px solid #D8D8D8; transition: transform 0.3s ease; }
+    .productsMenuTrigger { display: flex; align-items: center; justify-content: space-between; background: #151412; border: 1px solid #4A4846; padding: 15px 20px; font-family: var(--inter18ptRegular); color: var(--yellow); cursor: pointer; position: relative; font-size: 18px;border-radius: 3px; }
+    .productsMenuTrigger::after { content: ''; width: 0; height: 0; border-left: 6px solid transparent; border-right: 6px solid transparent; border-top: 6px solid var(--yellow); transition: transform 0.3s ease; }
     .productsMenu.open .productsMenuTrigger::after { transform: rotate(180deg); }
     .productsMenu ul { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #151412; border: 1px solid #4A4846; border-top: none; padding: 0; margin: 0; list-style: none; }
     .productsMenu.open ul { display: block; }
-    .productsMenu ul li a { border-bottom: 1px solid #2a2a2a; padding: 15px 20px; margin: 0; color: #D8D8D8;}
+    .productsMenu ul li a { border-bottom: 1px solid #2a2a2a; padding: 15px 20px; margin: 0; color: var(--yellow);}
     
     /*about-us*/
     .aboutBannerwrap{height: 750px;}
