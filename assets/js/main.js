@@ -55,11 +55,22 @@ $(function () {
 
     // --- Header Logic ---
     function initializeHeader() {
-        // Scroll Logic
         const $header = $("#header");
+        const $hamburger = $('#hamburger');
+        const $mobileSidebar = $('#mobileSidebar');
+        const $closeSidebar = $('#closeSidebar');
+        const $sidebarOverlay = $('#sidebarOverlay');
+
+        // Scroll Logic
         if ($header.length) {
             const updateHeaderState = () => {
-                $header.toggleClass("scrolled", $(window).scrollTop() > 150 || $(window).width() < 1024);
+                const isScrolled = $(window).scrollTop() > 150 || $(window).width() < 1024;
+                $header.toggleClass("scrolled", isScrolled);
+
+                if (isScrolled && $mobileSidebar.hasClass('active')) {
+                    $mobileSidebar.removeClass('active');
+                    $hamburger.removeClass('active');
+                }
             };
 
             $(window).on("scroll resize", updateHeaderState);
@@ -68,11 +79,6 @@ $(function () {
         }
 
         // Mobile Menu Logic
-        const $hamburger = $('#hamburger');
-        const $mobileSidebar = $('#mobileSidebar');
-        const $closeSidebar = $('#closeSidebar');
-        const $sidebarOverlay = $('#sidebarOverlay');
-
         if ($hamburger.length && $mobileSidebar.length && $closeSidebar.length && $sidebarOverlay.length) {
             const toggleMenu = (show) => {
                 const action = show ? 'addClass' : 'removeClass';
