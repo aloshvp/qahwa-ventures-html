@@ -99,6 +99,16 @@
     .productsMenu ul { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #151412; border: 1px solid #4A4846; border-top: none; padding: 0; margin: 0; list-style: none; }
     .productsMenu.open ul { display: block; }
     .productsMenu ul li a { border-bottom: 1px solid #2a2a2a; padding: 15px 20px; margin: 0; color: var(--yellow);}
+    .productTitle > span{font-size: 25px;}
+    .productTitle > h3{font-size: 35px;margin: 5px 0 40px;}
+    .productInfo > p{font-size: 22px;}
+    .productInfo > span{margin:20px 0;line-height: 1.3em;font-size: 20px;}
+    .productImageSec{max-width: 200px;}
+    .productInfo > a{padding:12px 24px;font-size: 14px;}
+    .productInfo > a > img{width: 20px;height: 20px;}
+    .productImageSec .productImage1{left:-60px;max-width:160px;}        
+    .productSwiperSliderNav{bottom:60px;}
+    .productSwiperSliderBtn{width:50px ;height:50px;}
     
     /*about-us*/
     .aboutBannerwrap{height: 750px;}
@@ -151,7 +161,7 @@
     .contactDetailsGrid{padding: 60px 0 30px;}
 
     /*Products*/
-    .productContent{flex-direction: column;gap: 35px;padding: 60px 0 105px;text-align: center;}
+    .productContent{flex-direction: column;gap: 35px;padding: 100px 0 150px;text-align: center;}
     .productTitle > h3{margin: 20px 0;}
     .productTitle > h3 > em{display: inline-block;}
     .productImageSec{margin: 0 auto;}

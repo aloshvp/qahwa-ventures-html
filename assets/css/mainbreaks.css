@@ -111,19 +111,6 @@
     .marqueeWrap{padding: 30px 25px;}
     .marqueeItem span{font-size: 80px;}
 
-    /*Product slider*/
-    .productTitle > span{font-size: 25px;}
-    .productTitle > h3{font-size: 35px;margin: 5px 0 40px;}
-    .productInfo > p{font-size: 22px;}
-    .productInfo > span{margin:20px 0;line-height: 1.3em;font-size: 20px;}
-    .productImageSec{max-width: 200px;}
-    .productInfo > a{padding:12px 24px;font-size: 14px;}
-    .productInfo > a > img{width: 20px;height: 20px;}
-    .productImageSec .productImage1{left:-60px;max-width:160px;}    
-    .productContent{padding: 55px 0 80px;}
-    .productSwiperSliderNav{bottom:60px;gap: 10px;}
-    .productSwiperSliderBtn{width:30px;height:30px;}
-
     /*about*/
     .aboutWrap{padding: 80px 0;height: 750px;}
     .aboutContent{flex-direction: column;}
