@@ -86,9 +86,9 @@
 .productInfo > a{padding: 16px 26px;border: 1px solid #42281B;background: #42281B;border-radius: 50px;display: inline-flex;gap: 10px;align-items: center;transition: all 0.3s ease;}
 .productInfo > a:hover{background: transparent;border: 1px solid #42281B;}
 .productSliderWrap{position: relative;}
-.productSwiperSliderNav{position:absolute;bottom:100px;left:0;right:0;display:flex;justify-content:center;gap:20px;z-index:10}
-.productSwiperSliderBtn{width:50px;height:50px;background-image:url(../images/static/left-arrow.png);background-size:contain;background-repeat:no-repeat;cursor:pointer;transition:transform .3s ease}
-.productSwiperSliderBtn.productSwiperNextBtn{background-image:url(../images/static/right-arrow.png)}
+.productSwiperSliderNav{position:absolute;bottom:100px;left:0;right:0;display:flex;justify-content:center;gap:5px;z-index:10}
+.productSwiperSliderBtn{width:70px;height:70px;background-image:url(../images/static/left-arrow.svg);background-size:contain;background-repeat:no-repeat;cursor:pointer;transition:transform .3s ease}
+.productSwiperSliderBtn.productSwiperNextBtn{background-image:url(../images/static/right-arrow.svg)}
 .productSwiperSliderBtn:hover{transform:scale(1.05);opacity:.8} 
 
 .productsListWrap{padding: 90px 0;background-color: #151412;}
