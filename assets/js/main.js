@@ -67,7 +67,7 @@ $(function () {
                 const isScrolled = $(window).scrollTop() > 150 || $(window).width() < 1024;
                 $header.toggleClass("scrolled", isScrolled);
 
-                if (isScrolled && $mobileSidebar.hasClass('active')) {
+                if (isScrolled && window.matchMedia("(min-width: 992px)").matches && $mobileSidebar.hasClass('active')) {
                     $mobileSidebar.removeClass('active');
                     $hamburger.removeClass('active');
                 }
