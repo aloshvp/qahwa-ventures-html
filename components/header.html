@@ -1,10 +1,11 @@
-<header class="headerWrap" id="header">
+<!-- Header -->
+<header class="headerWrap staticHeaderWrap" id="header">
     <div class="container">
         <div class="headerSec">
 
             <!-- Hamburger -->
             <div class="hamburger" id="hamburger">
-                <img src="assets/images/common/hamburger.svg" width="32" />
+                <img src="assets/images/common/hamburger.svg" width="32" loading="lazy" alt="Menu" />
                 <span>Menu</span>
             </div>
 
@@ -13,9 +14,16 @@
                 <ul class="navLinksList">
                     <li class="headerLogoSec">
                         <a href="/">
-                            <img src="assets/images/common/logo.svg" width="162" height="162" class="headerLogoImg" />
+                            <img src="assets/images/common/logo.svg" width="162" height="162" class="headerLogoImg"
+                                loading="lazy" alt="Qahwa Ventures" />
                         </a>
                     </li>
+                    <li class="headerMenuItem"><a href="/">Home</a></li>
+                    <li class="headerMenuItem"><a href="/about-us.html">About</a></li>
+                    <li class="headerMenuItem"><a href="/portfolio.html">Portfolio</a></li>
+                    <li class="headerMenuItem"><a href="javascript://" class="expertiseLink">Expertise</a></li>
+                    <li class="headerMenuItem"><a href="/contact-us.html">Contact</a></li>
+                    <li class="headerMenuItem"><a href="/career.html">Career</a></li>
                 </ul>
             </div>
 
@@ -24,21 +32,21 @@
 </header>
 
 <!-- Mobile Sidebar -->
-<div class="mobileSidebar" id="mobileSidebar">
+<div class="mobileSidebar staticMobileSidebar" id="mobileSidebar">
     <div class="sidebarOverlay" id="sidebarOverlay"></div>
 
     <div class="sidebarContent">
         <div class="hamburger" id="closeSidebar">
-            <img src="assets/images/common/hamburger.svg" width="32" />
+            <img src="assets/images/common/hamburger.svg" width="32" loading="lazy" alt="Close Menu" />
             <span>Menu</span>
         </div>
 
         <nav class="sidebarNav">
             <ul class="sidebarNavList">
                 <li><a href="/">Home</a></li>
-                <li><a href="javascript://">About</a></li>
+                <li><a href="/about-us.html">About</a></li>
                 <li><a href="/portfolio.html">Portfolio</a></li>
-                <li><a href="javascript://">Expertise</a></li>
+                <li><a href="javascript://" class="expertiseLink">Expertise</a></li>
                 <li><a href="/contact-us.html">Contact</a></li>
                 <li><a href="/career.html">Career</a></li>
             </ul>
@@ -49,8 +57,6 @@
 <!-- WhatsApp -->
 <div class="whatsappBtnWrap">
     <a href="javascript://" class="whatsappBtn">
-        <img src="assets/images/common/whatsapp.png" width="38" />
+        <img src="assets/images/common/whatsapp.png" width="38" loading="lazy" alt="WhatsApp" />
     </a>
 </div>
-
-<script src="header.js"></script>

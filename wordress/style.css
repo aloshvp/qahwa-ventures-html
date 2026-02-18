@@ -1,0 +1,68 @@
+
+  .insightsUpdatesDetailsWrap{padding:160px 0;background-color: #000;color: #d8d8d8;}
+  .insightsUpdatesDetailsBody{display:flex}
+  .insightsUpdatesDetailsLftCont{border-right:1px solid #d8d8d8;padding-right:40px;flex:80%}
+  .insightsUpdatesDetailsRghtCont{padding-left:40px}
+  .insightsUpdatesDetailsRghtCont>h3{font-size:22px;line-height:1em;margin-bottom:30px;font-family:var(--medium);color:#d8d8d8}
+  .recentPostsWrap{display:flex;flex-direction:column;gap:30px;position:sticky;top:150px}
+  .recentPostsitem{display:flex;gap:20px;border-bottom:1px solid #d8d8d8;padding-bottom:30px;align-items:center;cursor:pointer}
+  .recentPostsitem>p{font-size:18px;line-height:1.4em;font-family:var(--medium);transition:all .3s ease}
+  .recentPostImg>img{min-width:120px;display:block}
+  .recentPostsitem:hover p{color:#fff}
+  .blogPostContentHead>h3{font-size:18px;line-height:1em;color:#d8d8d8}
+  .blogPostContentHead>h1{font-size:36px;line-height:1.2em;font-family:var(--medium);color:#d8d8d8;margin:20px 0 10px;max-width:800px}
+  .blogPostContentHead>span{color:#d8d8d8;font-size:16px;line-height:1em}
+  .blogPostContent img{border-radius:20px;width:100%;height:auto;margin:30px 0}
+  .blogPostContent h2{font-size:26px;line-height:1.4em;margin:20px 0;font-family:var(--medium)}
+  .blogPostContent p{font-size:18px;line-height:1.5em;margin-bottom:5px}
+  .blogPostContent p>b{margin:10px 0;font-family:var(--medium);display:block}
+  .blogPostContent ul>li{font-size:18px;line-height:1.5em;position:relative;padding:0 0 8px 25px}
+  .blogPostContent ul>li::before{content:"";position:absolute;top:7px;left:0;width:8px;height:8px;border-radius:50%;border:1px solid #E50019}
+  .blogVideowWap{position:relative;width:100%;margin:0 auto;overflow:hidden;border-radius:10px;margin:30px 0;display:block}
+  .blogVideowWap img{display:block;width:100%;height:auto;border-radius:20px;margin:0}
+  .blogVideoOverlay{position:absolute;top:0;left:0;width:100%;height:100%;background:#0003;border-radius:20px}
+  .blogVideoPlayBtn{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:65px;height:65px;display:flex;align-items:center;justify-content:center;transition:all .5s ease}
+  .blogVideowWap:hover .blogVideoPlayBtn{transform:translate(-50%,-50%) scale(1.3)}
+  .blogPostShareSec{margin:80px 0 0;display:flex;gap:10px;justify-content:center;padding:20px;border:1px solid #ddd;border-width:1px 0}
+  .blogPostShareSec .shareButton{display:flex;align-items:center;justify-content:center;padding:10px 15px;font-size:16px;text-decoration:none;border-radius:8px;color:#d8d8d8;min-width:100px;transition:opacity .2s;cursor:pointer;gap:8px}
+  .blogPostShareSec .shareButton .icon{margin-right:5px;font-style:normal}
+  .blogPostShareSec .facebook{background-color:#3b5998}
+  .blogPostShareSec .twitter{background-color:#000;color:#d8d8d8}
+  .blogPostShareSec .email{background-color:#7f7f7f;color:#d8d8d8}
+  .blogPostShareSec .whatsapp{background:linear-gradient(to right,#25D366,#34AF23);color:#d8d8d8}
+  .blogPostShareSec .generic-share{background:linear-gradient(to right,#8BC34A,#C6FF00);color:#d8d8d8}
+  .blogPostShareSec .share-button:hover{opacity:.9}
+
+  @media only screen and (max-width: 991px) {
+    .insightsUpdatesDetailsWrap{padding:60px 0}
+    .insightsUpdatesDetailsBody{flex-direction:column}
+    .insightsUpdatesDetailsLftCont{border-right:none;padding-right:0}
+    .insightsUpdatesDetailsRghtCont{padding-left:0}
+    .blogPostContentHead>h1{max-width:100%}
+    .blogPostShareSec{margin:40px 0}
+    .recentPostsWrap{gap:20px}
+    .recentPostsitem{padding-bottom:20px}
+  }
+
+  @media only screen and (max-width: 767px) {
+    .insightsUpdatesDetailsWrap{padding:40px 0 60px}
+    .blogPostContentHead>h1{font-size:24px;margin:15px 0 5px}
+    .blogPostContentHead>h3{font-size:16px}
+    .blogPostContentHead>span{font-size:14px}
+    .blogPostContent img{margin:20px 0}
+    .blogPostContent p{font-size:16px}
+    .blogPostContent h2{font-size:20px;margin:15px 0}
+    .blogPostContent ul>li{font-size:16px;padding:0 0 8px 20px}
+    .blogPostContent ul>li:before{width:6px;height:6px}
+    .blogVideowWap img{margin:0}
+    .blogPostShareSec{flex-wrap:wrap}
+    .blogPostShareSec .shareButton{font-size:14px;min-width:90px}
+    .insightsUpdatesDetailsRghtCont>h3{font-size:20px}
+    .recentPostsitem{gap:15px}
+    .recentPostsitem>p{font-size:16px}
+    .blogVideoPlayBtn{width:50px;height:50px}
+  }
+
+  @media only screen and (max-width: 479px) {
+    .insightsUpdatesDetailsWrap{padding:30px 0 40px}
+  }
