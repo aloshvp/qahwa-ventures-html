@@ -1,5 +1,6 @@
 /**
  * Component Loader — loads header.html & footer.html into their placeholders
+ * Runs immediately (before jQuery ready) using native fetch()
  */
 (function () {
     'use strict';
@@ -22,23 +23,60 @@
             });
     }
 
-    var scriptSrc = document.currentScript
-        ? document.currentScript.src
-        : (function () {
-            var scripts = document.getElementsByTagName('script');
-            return scripts[scripts.length - 1].src;
-        })();
+    var base = (function () {
+        var scripts = document.getElementsByTagName('script');
+        var src = scripts[scripts.length - 1].src;
+        return src.substring(0, src.lastIndexOf('/') + 1);
+    })();
 
-    var base = scriptSrc.substring(0, scriptSrc.lastIndexOf('/') + 1);
-
+    // Load header → once injected, init header JS (hamburger / scroll logic)
     loadComponent('header-placeholder', base + 'components/header.html', function () {
-        if (typeof initHeader === 'function') initHeader();
+        initHeaderJS();
         document.dispatchEvent(new Event('headerLoaded'));
     });
 
+    // Load footer
     loadComponent('footer-placeholder', base + 'components/footer.html', function () {
         document.dispatchEvent(new Event('footerLoaded'));
     });
+
+    // Header JS logic (mirrors assets/js/header.js)
+    function initHeaderJS() {
+        var $header = $('#header');
+        var $hamburger = $('#hamburger');
+        var $mobileSidebar = $('#mobileSidebar');
+        var $closeSidebar = $('#closeSidebar');
+        var $sidebarOverlay = $('#sidebarOverlay');
+
+        // Scroll / resize → toggle .scrolled class
+        if ($header.length) {
+            var updateHeaderState = function () {
+                var isScrolled = $(window).scrollTop() > 150 || $(window).width() < 1024;
+                $header.toggleClass('scrolled', isScrolled);
+
+                if (isScrolled && window.matchMedia('(min-width: 992px)').matches
+                    && $mobileSidebar.hasClass('active')) {
+                    $mobileSidebar.removeClass('active');
+                    $hamburger.removeClass('active');
+                }
+            };
+            $(window).on('scroll resize', updateHeaderState);
+            updateHeaderState();
+        }
+
+        // Mobile menu toggle
+        if ($hamburger.length && $mobileSidebar.length && $closeSidebar.length && $sidebarOverlay.length) {
+            var toggleMenu = function (show) {
+                var action = show ? 'addClass' : 'removeClass';
+                $mobileSidebar[action]('active');
+                $hamburger[action]('active');
+            };
+
+            $hamburger.off('click').on('click', function () { toggleMenu(true); });
+            $closeSidebar.off('click').on('click', function () { toggleMenu(false); });
+            $sidebarOverlay.off('click').on('click', function () { toggleMenu(false); });
+        }
+    }
 })();
 
 $(function () {
