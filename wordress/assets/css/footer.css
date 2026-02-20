@@ -1,0 +1,122 @@
+.footerWrap{padding: 100px 0 50px;background: #000;color: var(--yellow);font-family: var(--inter24ptRegular);}
+.footerContent{display: flex;gap: 100px;padding-bottom: 75px;}
+.footerLogoSec{display: flex;max-width: 350px;flex-direction: column;gap: 40px;}
+.footerLogoSec > p{font-size: 16px;font-family:var(--inter24ptRegular);line-height: 1.8em;}
+.footerContactSec { display: flex;gap:100px;width: 100%;} 
+.footerContactSec h4{font-size:18px;line-height: 1em;font-family: var(--inter18ptSemiBold);margin-bottom: 30px;text-transform: uppercase;}
+.footerLinkSec { grid-row: span 2 / span 2; } 
+.newsletterSec { grid-column: span 3 / span 3; grid-column-start: 2; }
+.footerLinkWrap{display: flex;width: 100%;justify-content: space-between;}
+.footerLinkNav > li > a{display: block;font-size: 16px;line-height: 1em;margin-bottom: 20px;font-weight: 300;transition:  color 0.3s ease;color: var(--yellow);}
+.footerLinkNav > li:last-child > a{margin-bottom: 0;}
+/* .footerLinkNav > li > a:hover{text-shadow: 0 0 2px currentColor;  } */
+.footerLinkNav > li > a:hover{color: #fff;}
+.footerContactDetails{display: flex;gap: 60px;justify-content: space-between;}
+.addressSec > p{font-size: 18px;line-height: 1.8em;}
+.addressSec > p > em{font-style: normal;display: block;}
+.phoneSec{display: flex;flex-direction: column;gap: 30px;}
+.phoneSec > a{font-size: 16px;line-height: 1em;color: var(--yellow);transition: all 0.3s ease;}
+.phoneSec > a:hover{color: #fff;}
+.socialMediaLinks{display: flex;gap: 25px;margin-top: 30px;}
+.socialMediaLinks > a .socialMediaLogo{transition: all 0.5s ease;}
+.socialMediaLinks > a:hover .socialMediaLogo{transform: scale(1.2);}
+.newsletterSec > span{display: block;font-size: 18px;line-height: 1em;margin-bottom: 5px;}
+.newsletterSec > h5{font-size: 30px;line-height: 1em;font-weight: 400;margin-bottom: 15px;}
+.newsletterInput{position: relative;width: 360px;}
+.newsletterInput input{all: unset;width: 100%;padding: 6px 0; border-bottom: 1px solid var(--yellow);}
+.newsletterInput input::placeholder{color: var(--yellow);font-size: 14px;line-height: 1em;}
+.newsletterInput > a{position: absolute;top: 3px;right: 0;}
+.footerBottomSec{display: flex;justify-content: space-between;color: var(--yellow);padding-top: 25px;border-top: 1px solid #707070;}
+.footerBottomSec > span{font-size: 14px;line-height: 1em;font-family: var(--inter24ptRegular);}
+.qahwaVenturesPartnersLogo{display: flex;gap: 20px;}
+.qahwaVenturesText{max-width: 413px;font-size: 16px;line-height: 1.8em;margin: 42px 0 72px;}
+.officialPartnerImgSec{display: flex;flex-direction: column;gap: 45px;}
+
+
+@media screen and (min-width: 1800px) {
+    
+}
+
+@media screen and (min-width: 1600px) {
+    .footerContactSec { gap:200px !important;} 
+    .footerContent{gap: 200px !important;}
+}
+
+@media screen and (min-width: 1440px) {
+
+    .footerLogoSec {max-width: 475px !important;}
+}
+
+@media screen and (min-width: 1300px) {
+}
+
+@media screen and (max-width: 1200px) {
+
+    .footerContactSec {grid-template-columns: repeat(2, 1fr);}
+    .newsletterSec {grid-column: auto;}
+    .footerContactSec{gap: 40px 80px;}
+
+    .footerContactSec { gap:60px;} 
+    .footerContent{gap: 60px;} 
+    .footerLogoSec {max-width: 250px;}
+
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+
+@media only screen and (max-width: 991px) {
+
+    .footerWrap{padding: 60px 0 35px;}
+    .footerContent{flex-direction: column;gap: 45px;padding-bottom: 50px;} 
+    .footerLogoSec{flex-direction: row;gap: 25px;max-width: 100%;align-items: center;}
+    .footerLogoSec > img{max-width: 115px;}
+    .qahwaVenturesText{margin: 0;}
+    .qahwaVenturesText{font-size: 15px;line-height: 1.6em;}
+    .footerContactSec{justify-content: space-between;}
+     
+}
+
+@media only screen and (max-width: 767px) {  
+
+    .footerContactSec{display: flex;flex-direction: column;gap: 40px;}
+    .footerBottomSec{flex-direction: column;align-items: center;gap: 10px;padding-top: 25px;}
+    .footerContent{padding-bottom: 45px;gap: 40px;}
+    .footerLogoSec{flex-direction: column;align-items: flex-start;}
+    .qahwaVenturesLogo > img{max-width: 90px;}
+    .footerContactSec h4{margin-bottom: 15px;}
+    .officialPartnerImgSec{gap: 35px;flex-direction: row;}
+    .officialPartnerImgSec  >img{max-width: 100px;}
+    .socialMediaLinks{margin-top: 15px;}
+    .phoneSec{gap: 15px;}
+    .footerLinkNav>li>a{margin-bottom: 15px;}
+    .footerLogoSec>img {max-width: 90px;}
+    
+}
+
+@media only screen and (max-width: 479px) {
+
+    .footerWrap{padding: 40px 0 30px;}
+    .footerContent{padding-bottom: 30px;gap: 30px;}
+    .footerBottomSec{padding-top: 20px;}
+    .footerBottomSec > span,.footerBottomSec > em{text-align: center;line-height: 1.2em;font-size: 14px;}    
+    .footerLinkNav > li > a{font-size: 16px;margin-bottom: 16px;}
+    .addressSec > p {font-size: 16px;}
+    .addressSec > p > em{display: inline-block;}
+    .phoneSec > a{font-size: 16px;}
+    .newsletterSec > span{font-size: 16px;}
+    .socialMediaLinks{gap: 20px;}
+    .newsletterSec > h5{font-size: 20px;}
+    .newsletterInput{width: 100%;}    
+    .newsletterInput > a{font-size: 14px;top: 10px;}
+    .qahwaVenturesPartnersLogo > img{max-width: 230px;}
+    .footerLogoSec{gap: 20px;}    
+    .qahwaVenturesLogo>img{max-width: 80px;}
+    .qahwaVenturesText{font-size: 16px;}
+
+}
+
+@media only screen and (max-width: 320px) {
+}

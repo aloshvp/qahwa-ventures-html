@@ -142,7 +142,6 @@ img.headerLogoImg{max-width: 100px;position: relative;top: -25px;transition: all
     .sidebarContactInfo{padding: 40px 0;}
     .sidebarAddress{padding: 40px 0 0;}
     .sidebarContent{font-size: 385px;padding: 30px;}
-    .headerWrap.scrolled .headerNavLinks .navLinksList{gap: 20px;}
    
 }
 

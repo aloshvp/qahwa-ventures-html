@@ -1,70 +1,46 @@
+/**
+ * Component Loader — loads header.html & footer.html into their placeholders
+ */
+(function () {
+    'use strict';
+
+    function loadComponent(placeholderId, componentPath, callback) {
+        var el = document.getElementById(placeholderId);
+        if (!el) return;
+
+        fetch(componentPath)
+            .then(function (res) {
+                if (!res.ok) throw new Error('Failed to load: ' + componentPath);
+                return res.text();
+            })
+            .then(function (html) {
+                el.outerHTML = html;
+                if (typeof callback === 'function') callback();
+            })
+            .catch(function (err) {
+                console.error(err);
+            });
+    }
+
+    var scriptSrc = document.currentScript
+        ? document.currentScript.src
+        : (function () {
+            var scripts = document.getElementsByTagName('script');
+            return scripts[scripts.length - 1].src;
+        })();
+
+    var base = scriptSrc.substring(0, scriptSrc.lastIndexOf('/') + 1);
+
+    loadComponent('header-placeholder', base + 'components/header.html', function () {
+        if (typeof initHeader === 'function') initHeader();
+        document.dispatchEvent(new Event('headerLoaded'));
+    });
+
+    loadComponent('footer-placeholder', base + 'components/footer.html', function () {
+        document.dispatchEvent(new Event('footerLoaded'));
+    });
+})();
+
 $(function () {
-    const footerHTML = `
-    <footer class="footerWrap">
-        <div class="container">
-            <div class="footerContent">
-                <!-- Logo Section -->
-                <div class="footerLogoSec">
-                    <img src="../assets/images/common/logo.svg" alt="Qahwa Ventures" class="mainLogo" width="162" height='162'>
-                    <p>
-                        Qahwa Ventures is a Qatar-based F&B investment and franchise management
-                        company focused on building scalable, high-value consumer brands.
-                    </p>
-                </div>
-
-                <!-- Links & Contact -->
-                <div class="footerContactSec">
-                    <!-- Navigation -->
-                    <div class="sitemapSec">
-                        <h4>Site Map</h4>
-                        <ul class="footerLinkNav">
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/about-us.html">About</a></li>
-                            <li><a href="/portfolio.html">Portfolio</a></li>
-                            <li><a href="javascript://" class="expertiseLink">Expertise</a></li>
-                            <li><a href="/contact-us.html">Contact</a></li>
-                            <li><a href="/career.html">Career</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="officialPartnerSec">
-                        <h4>official partners of</h4>
-                        <div class="officialPartnerImgSec">
-                            <img src="../assets/images/common/Pellini-Logo.png" alt="Official Partner" width="168" height="53" />
-                            <img src="../assets/images/common/chutney-co-logo.png" alt="Official Partner" width="168" height="53" />
-                        </div>
-                    </div>
-
-                    <!-- Contact us -->
-                    <div class="footerContact">
-                        <h4 class="footerTitle">Contact Us</h4>
-                        <div class="phoneSec">
-                            <a href="mailto:info@qahwaventures.com">info@qahwaventures.com</a>
-                            <a href="tel:+97451245484">+974 5124 5484</a>
-                        </div>
-                        <div class="socialMediaLinks">
-                            <a href="javascript://"><img src="../assets/images/common/facebook.png" alt="Facebook" class="socialMediaLogo"></a>
-                            <a href="javascript://"><img src="../assets/images/common/instagram.png" alt="Instagram" class="socialMediaLogo"></a>
-                            <a href="javascript://"><img src="../assets/images/common/linkedin.png" alt="LinkedIn" class="socialMediaLogo"></a>
-                            <a href="javascript://"><img src="../assets/images/common/youtube.png" alt="YouTube" class="socialMediaLogo"></a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- Bottom Bar -->
-            <div class="footerBottomSec">
-                <span>© Qahwa Ventures Pvt Ltd. All Rights Reserved</span>
-                <span>
-                    Developed by
-                    <a href="https://marininfotech.in/" target="_blank">Marin Infotech</a>
-                </span>
-            </div>
-
-        </div>
-    </footer>
-    `;
-
-    $('#footer-placeholder').html(footerHTML);
+    // Page-specific logic here
 });
