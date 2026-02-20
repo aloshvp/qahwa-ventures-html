@@ -164,6 +164,9 @@ html{scroll-behavior:smooth}
 .blogfooter{display: flex;justify-content:center;align-items: center;margin: 55px 0 0;}
 .blogfooterLink{background: rgb(66, 40, 27, .46);border: 1px solid rgb(66, 40, 27, .46);border-radius: 50px;align-items: center;gap: 10px;padding: 16px 24px;transition: all .3s;display: inline-flex;width: max-content;font-size: 16px;font-family: var(--inter24ptSemiBold);color: var(--yellow);}
 .blogfooterLink:hover{background: #42281B;color: var(--yellow);}
+.blogfooterLink:active,
+.blogfooterLink:focus,
+.blogfooterLink:focus-visible{background: #5a3020;border-color: #5a3020;color: var(--yellow);}
 
 /*who we are*/
 .whoWeAreWrap{position:relative;height:900px;display:flex;align-items:center;background-color:#000;padding: 90px 0;}

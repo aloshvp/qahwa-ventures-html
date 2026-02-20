@@ -89,7 +89,7 @@ img.headerLogoImg{max-width: 100px;position: relative;top: -25px;transition: all
 
 
 /*WhatsApp Button*/
-.whatsappBtnWrap{position: fixed;bottom: 80px;right: 60px;z-index: 1000;border-radius: 50%;}
+.whatsappBtnWrap{position: fixed;bottom: 100px;right: 15px;z-index: 1000;border-radius: 50%;}
 .whatsappBtn{display: inline-block;width: 38px;height: 38px;display: flex;align-items: center;justify-content: center;transition: all 0.3s ease;}
 .whatsappBtn:hover{transform: scale(1.1);}
 .whatsappBtn img{width: 38px;height: 38px;}
