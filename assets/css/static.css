@@ -15,7 +15,7 @@
 .portfolioWrapper{padding: 160px 0 120px;background: #151412;}
 .portfolioTitle{text-align: center;color:var(--yellow);margin-bottom: 80px;}
 .portfolioTitle > h2{font-size: 45px;line-height: 1em;margin: 0;font-family: var(--inter24ptSemiBold);}
-.portfolioGrid{display: grid;grid-template-columns: repeat(3, 1fr);gap: 40px;color: var(--yellow);color: #676767;}
+.portfolioGrid{display: grid;grid-template-columns: repeat(3, 1fr);gap: 40px;color: #676767;}
 .portfolioItemLink{display: block;text-decoration: none;color: inherit;}
 .portfolioItem{border-bottom: 1px solid #676257;cursor: pointer;transition: all 0.3s ease;}
 .portfolioItem > h5{font-size: 35px;line-height: 1.5em;font-family: var(--inter24ptMedium);margin-top: 35px;text-align: center;transition: all 0.3s ease;}
