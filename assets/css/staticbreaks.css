@@ -32,7 +32,7 @@
     .productsListContent{gap: 100px;}
     .productsGridItemImage{padding: 30px;}
     .productsGridItemImageOverlay{padding: 40px;}
-    .productsGridItemImageOverlayDescription p {padding: 0 0 25px 0;margin: 0 0 25px;font-size: 14px;}
+    .productsGridItemImageOverlayDescription p {padding: 0 0 15px 0;margin: 0 0 15px;font-size: 14px;}
     .productsMenu {width: 20%;}
 
 }
