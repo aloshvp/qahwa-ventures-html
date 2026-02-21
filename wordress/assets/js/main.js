@@ -23,11 +23,8 @@
             });
     }
 
-    var base = (function () {
-        var scripts = document.getElementsByTagName('script');
-        var src = scripts[scripts.length - 1].src;
-        return src.substring(0, src.lastIndexOf('/') + 1);
-    })();
+    // Use the page's own URL as the base — always the wordress/ root
+    var base = document.baseURI.substring(0, document.baseURI.lastIndexOf('/') + 1);
 
     // Load header → once injected, init header JS (hamburger / scroll logic)
     loadComponent('header-placeholder', base + 'components/header.html', function () {
