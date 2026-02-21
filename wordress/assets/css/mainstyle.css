@@ -126,12 +126,20 @@ html{scroll-behavior:smooth}
   .blogVideoOverlay{position:absolute;top:0;left:0;width:100%;height:100%;background:#0003;border-radius:20px}
   .blogVideoPlayBtn{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:65px;height:65px;display:flex;align-items:center;justify-content:center;transition:all .5s ease}
   .blogVideowWap:hover .blogVideoPlayBtn{transform:translate(-50%,-50%) scale(1.3)}
-  .blogPostShareSec{margin:80px 0 0;display:flex;gap:10px;justify-content:center;padding:20px;border:1px solid #ddd;border-width:1px 0}
-  .blogPostShareSec .shareButton{display:flex;align-items:center;justify-content:center;padding:10px 15px;font-size:16px;text-decoration:none;border-radius:8px;color:#d8d8d8;min-width:100px;transition:opacity .2s;cursor:pointer;gap:8px}
-  .blogPostShareSec .shareButton .icon{margin-right:5px;font-style:normal}
-  .blogPostShareSec .facebook{background-color:#3b5998}
-  .blogPostShareSec .twitter{background-color:#000;color:#d8d8d8}
-  .blogPostShareSec .email{background-color:#7f7f7f;color:#d8d8d8}
-  .blogPostShareSec .whatsapp{background:linear-gradient(to right,#25D366,#34AF23);color:#d8d8d8}
-  .blogPostShareSec .generic-share{background:linear-gradient(to right,#8BC34A,#C6FF00);color:#d8d8d8}
-  .blogPostShareSec .share-button:hover{opacity:.9}
+  /* Share Section */
+  .blogPostShareSec{margin:60px 0 0;display:flex;flex-wrap:wrap;align-items:center;gap:14px;padding:28px 0;border-top:1px solid rgba(255,255,255,0.08);border-bottom:1px solid rgba(255,255,255,0.08)}
+  .blogPostShareSec .shareLabel{font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:#666;font-family:var(--inter18ptMedium);margin-right:6px}
+  .blogPostShareSec .shareButton{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:transparent;border:2px solid;text-decoration:none;transition:background .2s ease,color .2s ease,transform .2s ease;flex-shrink:0}
+  .blogPostShareSec .shareButton:hover{transform:translateY(-3px)}
+  .blogPostShareSec .facebook{border-color:#1877f2;color:#1877f2}
+  .blogPostShareSec .facebook:hover{background:#1877f2;color:#fff}
+  .blogPostShareSec .twitter{border-color:#e7e7e7;color:#e7e7e7}
+  .blogPostShareSec .twitter:hover{background:#e7e7e7;color:#000}
+  .blogPostShareSec .whatsapp{border-color:#25d366;color:#25d366}
+  .blogPostShareSec .whatsapp:hover{background:#25d366;color:#fff}
+  .blogPostShareSec .linkedin{border-color:#0a66c2;color:#0a66c2}
+  .blogPostShareSec .linkedin:hover{background:#0a66c2;color:#fff}
+  .blogPostShareSec .email{border-color:#a855f7;color:#a855f7}
+  .blogPostShareSec .email:hover{background:#a855f7;color:#fff}
+
+
