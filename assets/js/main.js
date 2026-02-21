@@ -155,58 +155,189 @@ $(function () {
         const productsData = [
             {
                 id: 1,
-                category: 'whole-beans',
-                image: 'assets/images/products/bio_500g.png',
-                title: 'Biologica',
-                subtitle: 'Organic Coffee Beans',
+                category: 'compatible-capsules',
+                title: 'Compatible Capsules',
+                image: 'assets/images/products/capsule-vivace-nespresso.png',
+                subtitle: 'Pellini Vivace Nespresso Compatible Aluminium Capsules, 10 Caps / Pack',
                 description1: 'A Blend of Arabica and Robusta Coffee with full-bodied and Intense Taste with Notes of Cocoa and gingerbread.',
-                description2: 'Capsule in alluminio 80% riciclato compatibili Nespresso®',
+                description2: 'Capsule in alluminio 80% riciclato compatibili Nespresso® ',
             },
             {
                 id: 2,
-                category: 'whole-beans',
-                image: 'assets/images/products/cremoso_grani_1kg_3-4_dx.png',
-                title: 'Cremoso',
-                subtitle: 'Organic Coffee Beans',
-                description1: 'A Blend of Arabica and Robusta Coffee with full-bodied and Intense Taste with Notes of Cocoa and gingerbread.',
+                category: 'compatible-capsules',
+                title: 'Compatible Capsules',
+                image: 'assets/images/products/capsule-cremoso-nespresso.png',
+                subtitle: 'Pellini Cremoso Nespresso Compatible Aluminium Capsules, 10 Caps / Pack',
+                description1: 'A Blend of Arabica and Robusta Coffee with Spicy Taste with Notes of Caramel and Hazelnut.',
                 description2: 'Capsule in alluminio 80% riciclato compatibili Nespresso®',
             },
             {
                 id: 3,
                 category: 'compatible-capsules',
-                image: 'assets/images/products/top_originale_lattina_250.png',
-                title: 'Originale',
-                subtitle: 'Organic Coffee Beans',
-                description1: 'A Blend of Arabica and Robusta Coffee with full-bodied and Intense Taste with Notes of Cocoa and gingerbread.',
+                title: 'Compatible Capsules',
+                image: 'assets/images/products/capsule-gran-aroma-nespresso.png',
+                subtitle: 'Pellini Gran Aroma 100% Arabica, Nespresso Compatible Aluminum Capsules',
+                description1: 'Delicate Blend  of 100 % Arabica Coffee with Floral and Bitter Almond Notes.',
                 description2: 'Capsule in alluminio 80% riciclato compatibili Nespresso®',
             },
             {
                 id: 4,
-                category: 'espresso-line',
-                image: 'assets/images/products/Espresso-Bar.png',
-                title: 'Espresso Bar',
-                subtitle: 'Organic Coffee Beans',
-                description1: 'A Blend of Arabica and Robusta Coffee with full-bodied and Intense Taste with Notes of Cocoa and gingerbread.',
+                category: 'compatible-capsules',
+                title: 'Compatible Capsules',
+                image: 'assets/images/products/capsule-top-nespresso.png',
+                subtitle: 'Pellini Top Nespresso Compatible Aluminium Capsules, 10 Caps / Pack',
+                description1: 'A  Blend of 100% Arabica Coffee  with Hints of Cocoa and Citrus Fruits.',
                 description2: 'Capsule in alluminio 80% riciclato compatibili Nespresso®',
             },
             {
                 id: 5,
                 category: 'compatible-capsules',
-                image: 'assets/images/products/gran_aroma_grani_1Kg.png',
-                title: 'Gran Aroma',
-                subtitle: 'Organic Coffee Beans',
-                description1: 'A Blend of Arabica and Robusta Coffee with full-bodied and Intense Taste with Notes of Cocoa and gingerbread.',
-                description2: 'Capsule in alluminio 80% riciclato compatibili Nespresso®',
+                title: 'Compatible Capsules',
+                image: 'assets/images/products/capsule-decaffeinato-nespresso.png',
+                subtitle: 'Pellini Decaffeinato Nespresso Compatible Aluminium Capsules, 10 Caps / Pack',
+                description1: 'A  Blend of Arabica and Robusta Coffee with Hints of Dried Fruits and Figs',
+                description2: 'Aluminum capsules 80% recycled compatible with Nespresso® machines',
             },
             {
                 id: 6,
-                category: 'moka-line',
-                image: 'assets/images/products/decaffe_capsule_10.png',
-                title: 'Decaffe',
-                subtitle: 'Organic Coffee Beans',
-                description1: 'A Blend of Arabica and Robusta Coffee with full-bodied and Intense Taste with Notes of Cocoa and gingerbread.',
-                description2: 'Capsule in alluminio 80% riciclato compatibili Nespresso®',
+                category: 'compatible-capsules',
+                title: 'Compatible Capsules',
+                image: 'assets/images/products/capsule-cremoso-dolce-gusto.png',
+                subtitle: 'PELLINI CREMOSO, Nescafé® Dolce Gusto® compatible capsule 10 pcs/Box',
+                description1: 'An Espresso with a persistent cream and great aromatic richness that emphasises floral and fruity hints. Roasted and ground 100% Arabica Coffee.',
             },
+            {
+                id: 7,
+                category: 'compatible-capsules',
+                title: 'Compatible Capsules',
+                image: 'assets/images/products/capsule-top-dolce-gusto.png',
+                subtitle: 'PELLINI TOP, in Nescafé® Dolce Gusto® compatible capsules 10 pcs/Box',
+                description1: 'A uniquely elegant, rich mosaic of aromas and flavours. Intense, enveloping aroma. Roasted and ground 100% Arabica Coffee.',
+            },
+            {
+                id: 8,
+                category: 'espresso-line',
+                title: 'Espresso Line',
+                image: 'assets/images/products/espresso-gran-aroma-250g.png',
+                subtitle: 'Pellini Espresso Gusto Bar N°3 Gran Aroma ground coffee - 2x250g',
+                description1: '100% Arabica beans',
+                description2: 'Characteristic aftertaste due to particularly large beans',
+                description3: 'Wet-processed espresso',
+            },
+            {
+                id: 9,
+                category: 'espresso-line',
+                title: 'Espresso Line',
+                image: 'assets/images/products/espresso-vellutato-250g.png',
+                subtitle: 'Pellini Espresso Gusto Bar N°1 Vellutato ground coffee - 250 g',
+                description1: '80% Arabica beans and 20% Robusta beans',
+                description2: 'Spicy notes',
+                description3: 'Gently roasted',
+            },
+            {
+                id: 10,
+                category: 'espresso-line',
+                title: 'Espresso Line',
+                image: 'assets/images/products/espresso-cremoso-250g.png',
+                subtitle: 'Pellini Espresso Gusto Bar N°46 Cremoso ground coffee - 250 g',
+                description1: '50% Arabica beans and 50% Robusta beans',
+                description2: 'Sweetish taste',
+                description3: 'Gently roasted',
+            },
+            {
+                id: 11,
+                category: 'moka-line',
+                title: 'Moka Line',
+                image: 'assets/images/products/moka-tradizionale-250g.png',
+                subtitle: 'Pellini Espresso Superiore N°42 Tradizionale ground coffee - 250 g',
+                description1: '60% Arabica beans and 40% Robusta beans',
+                description2: 'Intense and spicy taste',
+                description3: 'Malty and chocolaty flavours',
+            },
+            {
+                id: 12,
+                category: 'moka-line',
+                title: 'Moka Line',
+                image: 'assets/images/products/moka-cremoso-250g.png',
+                subtitle: 'Pellini Espresso Superiore N°20 Cremoso ground coffee - 250 g',
+                description1: '50% Arabica beans',
+                description2: '50% Robusta beans',
+                description3: 'Grinding ideal for the mocha pot',
+                description4: 'Medium roast',
+            },
+            {
+                id: 13,
+                category: 'moka-line',
+                title: 'Moka Line',
+                image: 'assets/images/products/moka-vellutato-250g.png',
+                subtitle: 'Pellini N°2 Vellutato ground coffee - 250 g',
+                description1: '80% Arabica beans and 20% Robusta beans',
+                description2: 'Particularly suitable for moka and filter coffee',
+                description3: 'Intense aroma',
+            },
+            {
+                id: 14,
+                category: 'moka-line',
+                title: 'Moka Line',
+                image: 'assets/images/products/moka-top-arabica-250g.png',
+                subtitle: 'Pellini Top Arabica 100% Ground Coffee-250g',
+                description1: '100% Arabica beans',
+                description2: 'roasted with hints of flowers and chocolate.',
+                description3: 'Mild and low in acid',
+            },
+            {
+                id: 15,
+                category: 'whole-beans',
+                title: 'Whole Beans',
+                image: 'assets/images/products/beans-cremoso-1000g.png',
+                subtitle: 'Pellini Espresso Bar No. 9 Cremoso No. 9 whole bean - 1000 g',
+                description1: '50% Arabica beans and 50% Robusta beans',
+                description2: 'Pleasantly mild in taste',
+                description3: 'Nutty flavours',
+            },
+            {
+                id: 16,
+                category: 'whole-beans',
+                title: 'Whole Beans',
+                image: 'assets/images/products/beans-gran-aroma-1000g.png',
+                subtitle: 'Pellini Espresso Bar N°3 Gran Aroma whole bean - 1000 g',
+                description1: 'Selected 100% Arabica beans.',
+                description2: 'Characteristic aftertaste due to particularly large beans',
+                description3: 'Wet-processed espresso',
+                description4: 'Gently drum- roasted according to origin 100 % Arabica composition',
+            },
+            {
+                id: 17,
+                category: 'whole-beans',
+                title: 'Whole Beans',
+                image: 'assets/images/products/beans-vivace-500g.png',
+                subtitle: 'Pellini Espresso Bar N°82 Vivace whole bean - 500 g',
+                description1: '60% Arabica beans and 40% Robusta beans',
+                description2: 'Notes of chocolate',
+                description3: 'Velvety crema',
+            },
+            {
+                id: 18,
+                category: 'whole-beans',
+                title: 'Whole Beans',
+                image: 'assets/images/products/beans-bio-arabica-500g.png',
+                subtitle: 'Pellini BIO 100% Arabica organic whole bean - 500 g',
+                description1: '100% Arabica beans',
+                description2: 'Fruity and nutty',
+                description3: 'From organic farming',
+            },
+            {
+                id: 19,
+                category: 'whole-beans',
+                title: 'Whole Beans',
+                image: 'assets/images/products/beans-top-arabica-500g.png',
+                subtitle: 'Pellini Top 100% Arabica Whole Beans-500 g',
+                description1: 'Whole beans 100% Arabica beans',
+                description2: 'Fruity flavours',
+                description3: 'Mild and low-acid taste',
+            },
+
+
         ];
 
         const renderProducts = (filter) => {
@@ -223,8 +354,10 @@ $(function () {
                             <img src="${product.image}" alt="${product.title}" width="308" height="231" class="productImage1" />
                             <a href="javascript://" class="productsGridItemImageOverlay">
                             <div class="productsGridItemImageOverlayDescription">                                
-                                <p>${product.description1}</p>  
-                                <p>${product.description2}</p>   
+                                ${product.description1 ? `<p>${product.description1}</p>` : ''}
+                                ${product.description2 ? `<p>${product.description2}</p>` : ''}
+                                ${product.description3 ? `<p>${product.description3}</p>` : ''}
+                                ${product.description4 ? `<p>${product.description4}</p>` : ''}
                                 </div>  
                                 <div class='productsGridItemImageOverlayEnquiry'>           
                                 <img src="assets/images/products/whatsapp.png" alt="whatsapp" width="17" height="17" />
@@ -232,8 +365,8 @@ $(function () {
                                 </div>                                
                             </a>
                         </div>
-                        <div class="productsGridItemContent">
-                            <p>${product.title}</p>
+                        <div class="productsGridItemContent">   
+                            ${filter === 'all' ? `<p>${product.title}</p>` : ''}               
                             <span>${product.subtitle}</span>
                         </div>
                     </div>
