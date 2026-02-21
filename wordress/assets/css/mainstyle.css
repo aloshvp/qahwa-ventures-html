@@ -149,7 +149,7 @@ html{scroll-behavior:smooth}
 .blogsWrap{padding: 85px 0;background: #151412;}
 .blogsHead{text-align: center;color: var(--yellow);margin-bottom: 80px;}
 .blogsHead > h2{font-size: 45px;line-height: 1em;margin: 0;font-family: var(--inter24ptSemiBold);}
-.blogsBody{display: grid;grid-template-columns: repeat(4, 1fr);gap: 30px;color: var(--yellow);}
+.blogsBody{display: grid;grid-template-columns: repeat(4, 1fr);gap:80px 30px;color: var(--yellow);}
 .blogItemLink{display: block;text-decoration: none;color: inherit;}
 .blogItem{border-bottom: 1px solid var(--yellow);cursor: pointer;}
 .blogItem > span{font-size: 13px;line-height: 1em;margin: 30px 0 10px;display: block;font-family: var(--inter24ptRegular);}

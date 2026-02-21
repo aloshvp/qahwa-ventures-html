@@ -80,5 +80,10 @@
 })();
 
 $(function () {
-    // Page-specific logic here
+    // Init AOS animations
+    if (typeof AOS !== 'undefined') {
+        AOS.init({ duration: 800, easing: 'slide' });
+    }
+    // MatchHeight for blog posts (same as parent index)
+    $('.blogItem > p').matchHeight();
 });
