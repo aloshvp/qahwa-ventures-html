@@ -112,9 +112,9 @@
 .productsGridItem:hover .productsGridItemImageOverlay{opacity: 1; visibility: visible;}
 .productsGridItem:hover .productsGridItemImageOverlayDescription,
 .productsGridItem:hover .productsGridItemImageOverlayEnquiry{transform: translateY(0); opacity: 1;}
-.productsGridItemContent > p{font-size: 30px;line-height: 1.4em;font-family: var(--inter18ptMedium);margin:0;color: #676767;transition: all 0.3s ease;}
+.productsGridItemContent > p{font-size: 28px;line-height: 1.4em;font-family: var(--inter18ptMedium);margin:0;color: #676767;transition: all 0.3s ease;}
 .productsGridItem:hover .productsGridItemContent > p{color: var(--yellow);}
-.productsGridItemContent > span {font-size: 18px;line-height: 1.4em;font-family: var(--inter18ptMedium);color: var(--yellow);display: block;margin:10px 0 0;color: #676767;transition: all 0.3s ease;}
+.productsGridItemContent > span {font-size: 18px;line-height: 1.4em;font-family: var(--inter18ptMedium);color: var(--yellow);display: block;margin:8px 0 0;color: #676767;transition: all 0.3s ease;}
 .productsGridItem:hover .productsGridItemContent > span{color: var(--yellow);}
 
 /*about-us*/
