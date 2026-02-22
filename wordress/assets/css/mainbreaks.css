@@ -51,7 +51,7 @@
     .blogsBody{grid-template-columns: repeat(2, 1fr);gap: 60px 30px;}
     .blogsHead{margin-bottom: 45px;}
 
-    .insightsUpdatesDetailsWrap{padding:60px 0}
+    .insightsUpdatesDetailsWrap{padding:120px 0}
     .insightsUpdatesDetailsBody{flex-direction:column}
     .insightsUpdatesDetailsLftCont{border-right:none;padding-right:0}
     .insightsUpdatesDetailsRghtCont{padding-left:0}
@@ -76,7 +76,7 @@
     .blogfooterLink{font-size: 14px;padding: 14px 22px;}
     .blogfooter{margin: 40px 0 0;}
 
-        .insightsUpdatesDetailsWrap{padding:40px 0 60px}
+    .insightsUpdatesDetailsWrap{padding:100px 0 60px}
     .blogPostContentHead>h1{font-size:24px;margin:15px 0 5px}
     .blogPostContentHead>h3{font-size:16px}
     .blogPostContentHead>span{font-size:14px}
@@ -104,7 +104,7 @@
     .blogItem>h5{font-size: 18px;}
     .blogItem > p{margin: 10px 0 15px;}
 
-    .insightsUpdatesDetailsWrap{padding:30px 0 40px}
+    /* .insightsUpdatesDetailsWrap{padding:30px 0 40px} */
 
 }
 
