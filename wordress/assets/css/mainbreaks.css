@@ -86,8 +86,9 @@
     .blogPostContent ul>li{font-size:16px;padding:0 0 8px 20px}
     .blogPostContent ul>li:before{width:6px;height:6px}
     .blogVideowWap img{margin:0}
-    .blogPostShareSec{flex-wrap:wrap}
-    .blogPostShareSec .shareButton{font-size:14px;min-width:90px}
+    .blogPostShareSec{flex-wrap:wrap;gap:10px;padding:20px 0;margin:30px 0}
+    .blogPostShareSec .shareLabel{font-size:11px;width:100%;margin:0 0 4px}
+    .blogPostShareSec .shareButton{width:36px;height:36px;min-width:unset;font-size:unset}
     .insightsUpdatesDetailsRghtCont>h3{font-size:20px}
     .recentPostsitem{gap:15px}
     .recentPostsitem>p{font-size:16px}
