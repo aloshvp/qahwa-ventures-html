@@ -18,6 +18,10 @@
     .ourExpertiseContentItem > p{font-size: 18px;}
     .ourExpertiseImgGrid{gap: 60px;}
 
+    .aboutMapContentLft>p {font-size: 57px;}
+    .aboutMapContentLft{max-width: 300px;top: 50%;}  
+    .aboutMapImg{max-width: 900px;}
+
    
 }
 
@@ -60,6 +64,8 @@
     .productsGrid {grid-template-columns: repeat(2, 1fr);}
     .productsGridItemContent>p{font-size: 25px;}
     .productsGridItemContent>span{font-size: 16px;}
+
+    .aboutMapContentLft{top: 60%;}
     
 }
 
