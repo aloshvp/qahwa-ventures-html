@@ -8,13 +8,24 @@ $(function () {
 
     // Scroll Logic
     if ($header.length) {
+        const $footer = $('footer.footerWrap');
+
         const updateHeaderState = () => {
-            const isScrolled = $(window).scrollTop() > 150 || $(window).width() < 1024;
+            const scrollTop = $(window).scrollTop();
+            const winHeight = $(window).height();
+            const isScrolled = scrollTop > 150 || $(window).width() < 1024;
             $header.toggleClass("scrolled", isScrolled);
 
             if (isScrolled && window.matchMedia("(min-width: 992px)").matches && $mobileSidebar.hasClass('active')) {
                 $mobileSidebar.removeClass('active');
                 $hamburger.removeClass('active');
+            }
+
+            // Hide header when footer enters the viewport
+            if ($footer.length) {
+                const footerTop = $footer.offset().top;
+                const isAtFooter = scrollTop >= footerTop;
+                $header.toggleClass('hidden-at-footer', isAtFooter);
             }
         };
 

@@ -21,6 +21,34 @@ $(function () {
         $(window).on("scroll resize", updateHeaderState);
         // Initial check
         updateHeaderState();
+
+        // Hide header when footer enters viewport
+        // Footer is loaded async via fetch — use MutationObserver to wait for it
+        function setupFooterObserver() {
+            var footer = document.querySelector('footer.footerWrap');
+            if (footer && 'IntersectionObserver' in window) {
+                var intersectionObserver = new IntersectionObserver(
+                    function (entries) {
+                        $header.toggleClass('hidden-at-footer', entries[0].isIntersecting);
+                    },
+                    { threshold: 0 }
+                );
+                intersectionObserver.observe(footer);
+                return true;
+            }
+            return false;
+        }
+
+        // Try immediately (works if footer is already in DOM)
+        if (!setupFooterObserver()) {
+            // Footer not yet injected — watch for it
+            var domWatcher = new MutationObserver(function (mutations, obs) {
+                if (setupFooterObserver()) {
+                    obs.disconnect();
+                }
+            });
+            domWatcher.observe(document.body, { childList: true, subtree: true });
+        }
     }
 
     // Mobile Menu Logic

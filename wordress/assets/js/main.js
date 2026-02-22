@@ -48,7 +48,8 @@
         // Scroll / resize → toggle .scrolled class
         if ($header.length) {
             var updateHeaderState = function () {
-                var isScrolled = $(window).scrollTop() > 150 || $(window).width() < 1024;
+                var scrollTop = $(window).scrollTop();
+                var isScrolled = scrollTop > 150 || $(window).width() < 1024;
                 $header.toggleClass('scrolled', isScrolled);
 
                 if (isScrolled && window.matchMedia('(min-width: 992px)').matches
@@ -59,6 +60,21 @@
             };
             $(window).on('scroll resize', updateHeaderState);
             updateHeaderState();
+
+            // Hide header when footer enters viewport using IntersectionObserver
+            function observeFooter() {
+                var footer = document.querySelector('footer.footerWrap');
+                if (footer && 'IntersectionObserver' in window) {
+                    var observer = new IntersectionObserver(function (entries) {
+                        $header.toggleClass('hidden-at-footer', entries[0].isIntersecting);
+                    }, { threshold: 0 });
+                    observer.observe(footer);
+                }
+            }
+
+            // Try immediately (in case footer already loaded), also after footerLoaded
+            observeFooter();
+            document.addEventListener('footerLoaded', observeFooter);
         }
 
         // Mobile menu toggle

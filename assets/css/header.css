@@ -1,9 +1,10 @@
 /*Header*/
-.headerWrap{position: fixed;top: 0;left: 0;width: 100%;z-index: 999;color: var(--yellow);background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);}
+.headerWrap{position: fixed;top: 0;left: 0;width: 100%;z-index: 999;color: var(--yellow);background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.45s cubic-bezier(0.4, 0, 0.2, 1);}
+.headerWrap.hidden-at-footer{transform: translateY(-110%);opacity: 0;pointer-events: none;}
 .headerWrap > .container{width:100%}
 .headerWrap.careerHeader{background: none;}
 .headerSec{display:flex;justify-content:space-between;padding: 35px 0 0;height: 135px;}
-.headerWrap.scrolled{background: rgba(0, 0, 0, 0.85); transition: background 0.3s ease;background: rgba(21, 20, 18, 0.95);}
+.headerWrap.scrolled{background: rgba(21, 20, 18, 0.95); transition: background 0.3s ease, transform 0.45s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.45s cubic-bezier(0.4, 0, 0.2, 1);}
 .headerWrap.scrolled .headerSec{padding: 10px 0;height: 90px;}
 .headerNavLinks{display: flex;justify-content: center;align-items: center;width: 100%;transition: justify-content 0.3s ease;}
 .navLinksList{display:flex;gap:40px;transition:gap .3s ease;height: 100px;}
