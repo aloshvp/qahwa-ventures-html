@@ -9,8 +9,14 @@
 
     /*contact-us*/
     .contactGrid{gap: 120px;}
-
-    .expertiseLine{display: block;}
+    
+    .expertiseLine{top: 15%;left: 45%;}
+    .expertiseLine svg,.expertiseLine.line2 svg{max-width: 100%;}        
+    .expertiseLine.line2{bottom: 19%;left: 45%;}
+    .ourExpertiseContent{gap: 160px;}
+    .ourExpertiseContentItem > h3{font-size: 35px;}
+    .ourExpertiseContentItem > p{font-size: 18px;}
+    .ourExpertiseImgGrid{gap: 60px;}
 
    
 }
@@ -39,7 +45,7 @@
 
 @media screen and (min-width: 1300px) {
 
-    /*Brochure*/
+    .expertiseLine{display: block;}
 }
 
 @media screen and (max-width: 1200px) {
