@@ -21,11 +21,15 @@ $(function () {
                 $hamburger.removeClass('active');
             }
 
-            // Hide header when footer enters the viewport
+            // Hide header when footer enters the viewport (desktop only)
             if ($footer.length) {
-                const footerTop = $footer.offset().top;
-                const isAtFooter = scrollTop >= footerTop;
-                $header.toggleClass('hidden-at-footer', isAtFooter);
+                if (window.matchMedia("(min-width: 992px)").matches) {
+                    const footerTop = $footer.offset().top;
+                    const isAtFooter = scrollTop >= footerTop;
+                    $header.toggleClass('hidden-at-footer', isAtFooter);
+                } else {
+                    $header.removeClass('hidden-at-footer');
+                }
             }
         };
 

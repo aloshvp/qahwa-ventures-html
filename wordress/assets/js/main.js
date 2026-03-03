@@ -66,7 +66,11 @@
                 var footer = document.querySelector('footer.footerWrap');
                 if (footer && 'IntersectionObserver' in window) {
                     var observer = new IntersectionObserver(function (entries) {
-                        $header.toggleClass('hidden-at-footer', entries[0].isIntersecting);
+                        if (window.matchMedia('(min-width: 992px)').matches) {
+                            $header.toggleClass('hidden-at-footer', entries[0].isIntersecting);
+                        } else {
+                            $header.removeClass('hidden-at-footer');
+                        }
                     }, { threshold: 0 });
                     observer.observe(footer);
                 }
