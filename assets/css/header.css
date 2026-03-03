@@ -159,7 +159,7 @@ img.headerLogoImg{max-width: 100px;position: relative;top: -25px;transition: all
     .headerWrap.scrolled img.headerLogoImg{top: 0px;max-width: 70px;padding: 0;}
     .headerWrap.scrolled .headerNavLinks{justify-content: flex-start;}
     .sidebarContent{left: unset;right: 0px; transform: translateX(100%);}
-    .sidebarContent .hamburger{position: absolute;}
+    .sidebarContent .hamburger{position: absolute;right: 15px;}
 
 }
 
