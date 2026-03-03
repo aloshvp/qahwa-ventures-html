@@ -21,11 +21,12 @@ $(function () {
                 $hamburger.removeClass('active');
             }
 
-            // Hide header when footer enters the viewport (desktop only)
+            // Hide header when footer is 60% visible (desktop only)
             if ($footer.length) {
                 if (window.matchMedia("(min-width: 992px)").matches) {
                     const footerTop = $footer.offset().top;
-                    const isAtFooter = scrollTop >= footerTop;
+                    const footerTrigger = footerTop + $footer.outerHeight() * 0.6;
+                    const isAtFooter = scrollTop + winHeight >= footerTrigger;
                     $header.toggleClass('hidden-at-footer', isAtFooter);
                 } else {
                     $header.removeClass('hidden-at-footer');

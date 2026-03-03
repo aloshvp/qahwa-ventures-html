@@ -71,7 +71,7 @@
                         } else {
                             $header.removeClass('hidden-at-footer');
                         }
-                    }, { threshold: 0 });
+                    }, { threshold: 0.6 });
                     observer.observe(footer);
                 }
             }

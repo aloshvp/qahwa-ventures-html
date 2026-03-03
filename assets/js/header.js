@@ -35,7 +35,7 @@ $(function () {
                             $header.removeClass('hidden-at-footer');
                         }
                     },
-                    { threshold: 0 }
+                    { threshold: 0.6 }
                 );
                 intersectionObserver.observe(footer);
                 return true;
