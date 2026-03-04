@@ -17,8 +17,69 @@
 
 <body>
 
-    <!-- Header Placeholder -->
-    <div id="header-placeholder"></div>
+    <!-- Header -->
+    <header class="headerWrap staticHeaderWrap" id="header">
+        <div class="container">
+            <div class="headerSec">
+
+                <!-- Hamburger -->
+                <div class="hamburger" id="hamburger">
+                    <img src="assets/images/common/hamburger.svg" width="32" loading="lazy" alt="Menu" />
+                    <span>Menu</span>
+                </div>
+
+                <!-- Logo -->
+                <div class="headerNavLinks">
+                    <ul class="navLinksList">
+                        <li class="headerLogoSec">
+                            <a href="/">
+                                <img src="assets/images/common/logo.svg" width="162" height="162" class="headerLogoImg"
+                                    loading="lazy" alt="Qahwa Ventures" />
+                            </a>
+                        </li>
+                        <li class="headerMenuItem"><a href="/">Home</a></li>
+                        <li class="headerMenuItem"><a href="/about-us.html">About</a></li>
+                        <li class="headerMenuItem"><a href="/portfolio.html">Portfolio</a></li>
+                        <li class="headerMenuItem"><a href="javascript://" class="expertiseLink">Expertise</a></li>
+                        <li class="headerMenuItem"><a href="/contact-us.html">Contact</a></li>
+                        <li class="headerMenuItem"><a href="/career.html">Career</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Sidebar -->
+    <div class="mobileSidebar staticMobileSidebar" id="mobileSidebar">
+        <div class="sidebarOverlay" id="sidebarOverlay"></div>
+
+        <div class="sidebarContent">
+            <div class="hamburger" id="closeSidebar">
+                <img src="assets/images/common/hamburger.svg" width="32" loading="lazy" alt="Close Menu" />
+                <span>Menu</span>
+            </div>
+
+            <nav class="sidebarNav">
+                <ul class="sidebarNavList">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about-us.html">About</a></li>
+                    <li><a href="/portfolio.html">Portfolio</a></li>
+                    <li><a href="javascript://" class="expertiseLink">Expertise</a></li>
+                    <li><a href="/contact-us.html">Contact</a></li>
+                    <li><a href="/career.html">Career</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- WhatsApp -->
+    <div class="whatsappBtnWrap">
+        <a href="https://api.whatsapp.com/send?phone=97455042150" target="_blank" class="whatsappBtn">
+            <img src="assets/images/common/whatsapp.png" width="38" loading="lazy" alt="WhatsApp" />
+        </a>
+    </div>
+    <!-- Header -->
 
     <!-- Main Content -->
     <main>
@@ -200,8 +261,90 @@
 
     </main>
 
-    <!-- Footer Placeholder -->
-    <div id="footer-placeholder"></div>
+    <!-- Footer -->
+    <footer class="footerWrap">
+        <div class="container">
+
+            <div class="footerContent">
+
+                <!-- Logo Section -->
+                <div class="footerLogoSec">
+
+                    <img src="assets/images/common/logo.svg" alt="Qahwa Ventures" class="mainLogo" width="162"
+                        height='162'>
+
+                    <p>
+                        Qahwa Ventures is a Qatar-based F&amp;B investment and franchise management
+                        company focused on building scalable, high-value consumer brands.
+                    </p>
+
+                </div>
+
+                <!-- Links & Contact -->
+                <div class="footerContactSec">
+
+                    <!-- Navigation -->
+                    <div class="sitemapSec">
+                        <h4>Site Map</h4>
+                        <ul class="footerLinkNav">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/about-us.html">About</a></li>
+                            <li><a href="/products.html">Products</a></li>
+                            <li><a href="/portfolio.html">Portfolio</a></li>
+                            <li><a href="javascript://" class="expertiseLink">Expertise</a></li>
+                            <li><a href="/contact-us.html">Contact</a></li>
+                            <li><a href="/career.html">Career</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="officialPartnerSec">
+                        <h4>official partners of</h4>
+                        <div class="officialPartnerImgSec">
+                            <a href="https://www.pellinicaffe.com/en/" target="_blank">
+                                <img src="assets/images/common/Pellini-Logo.png" alt="Official Partner" width="168"
+                                    height="53" />
+                            </a>
+                            <a href="https://www.socialeats.com/" target="_blank">
+                                <img src="assets/images/common/chutney-co-logo.png" alt="Official Partner" width="168"
+                                    height="53" />
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact us -->
+                    <div class="footerContact">
+                        <h4 class="footerTitle">Contact Us</h4>
+                        <div class="phoneSec">
+                            <a href="mailto:info@qahwaventures.com">info@qahwaventures.com</a>
+                            <a href="tel:+97451245484">+974 5124 5484</a>
+                        </div>
+                        <div class="socialMediaLinks">
+                            <a href="javascript://"><img src="assets/images/common/facebook.png" alt="Facebook"
+                                    class="socialMediaLogo"></a>
+                            <a href="javascript://"><img src="assets/images/common/instagram.png" alt="Instagram"
+                                    class="socialMediaLogo"></a>
+                            <a href="javascript://"><img src="assets/images/common/linkedin.png" alt="LinkedIn"
+                                    class="socialMediaLogo"></a>
+                            <a href="javascript://"><img src="assets/images/common/youtube.png" alt="YouTube"
+                                    class="socialMediaLogo"></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footerBottomSec">
+                <span>&copy; Qahwa Ventures Pvt Ltd. All Rights Reserved</span>
+                <span>
+                    Developed by
+                    <a href="https://marininfotech.in/" target="_blank">Marin Infotech</a>
+                </span>
+            </div>
+
+        </div>
+    </footer>
+    <!-- Footer -->
 
     <!-- jQuery -->
     <script src="assets/js/jquery.min.js"></script>
