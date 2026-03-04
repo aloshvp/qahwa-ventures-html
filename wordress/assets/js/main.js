@@ -50,12 +50,28 @@ $(function () {
         $sidebarOverlay.on('click', function () { toggleMenu(false); });
     }
 
-    // Init AOS animations
+    // Apply matchHeight BEFORE AOS.init() — at this point elements are still
+    // at their natural height (AOS hasn't hidden them yet), so measurement is accurate.
+    function applyMatchHeight() {
+        $('.blogItem h5').matchHeight();
+        $('.blogItem > p').matchHeight();
+    }
+
+    applyMatchHeight();
+
+    // Init AOS animations after measuring
     if (typeof AOS !== 'undefined') {
         AOS.init({ duration: 800, easing: 'slide' });
     }
 
-    // MatchHeight for blog posts
-    $('.blogItem > p').matchHeight();
+    // Re-run as fallbacks in case anything shifted after AOS kicked in
+    setTimeout(function () { $.fn.matchHeight._update(); }, 500);
+    setTimeout(function () { $.fn.matchHeight._update(); }, 1200);
+
+    // Re-update on each AOS scroll reveal
+    document.addEventListener('aos:in', function () {
+        $.fn.matchHeight._update();
+    });
 
 });
+
