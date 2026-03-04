@@ -50,8 +50,7 @@ $(function () {
         $sidebarOverlay.on('click', function () { toggleMenu(false); });
     }
 
-    // Apply matchHeight BEFORE AOS.init() — at this point elements are still
-    // at their natural height (AOS hasn't hidden them yet), so measurement is accurate.
+    // Apply matchHeight
     function applyMatchHeight() {
         $('.blogItem h5').matchHeight();
         $('.blogItem > p').matchHeight();
@@ -59,7 +58,7 @@ $(function () {
 
     applyMatchHeight();
 
-    // Init AOS animations after measuring
+    // Init AOS animations
     if (typeof AOS !== 'undefined') {
         AOS.init({ duration: 800, easing: 'slide' });
     }
