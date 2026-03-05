@@ -352,7 +352,7 @@ $(function () {
                     <div class="productsGridItem" data-aos="fade-up" data-aos-delay="${aosDelay}">
                         <div class="productsGridItemImage">
                             <img src="${product.image}" alt="${product.title}" width="308" height="231" class="productImage1" />
-                            <a href="javascript://" class="productsGridItemImageOverlay">
+                            <a href="https://api.whatsapp.com/send?phone=97455042150&text=${encodeURIComponent(`Hello, I'm interested in ${product.title} - ${product.subtitle}. Please share details.`)}" target="_blank" class="productsGridItemImageOverlay">
                             <div class="productsGridItemImageOverlayDescription">                                
                                 ${product.description1 ? `<p>${product.description1}</p>` : ''}
                                 ${product.description2 ? `<p>${product.description2}</p>` : ''}
