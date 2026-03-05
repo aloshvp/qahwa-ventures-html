@@ -6,7 +6,11 @@ if (typeof Swiper !== 'undefined') {
     new Swiper(".bannerSwiper", {
         pagination: { el: ".swiper-pagination", clickable: true },
         loop: true,
-        effect: "fade"
+        effect: "fade",
+        autoplay: {
+            delay: 9000,
+            disableOnInteraction: false
+        }
     });
 
     // Product Swiper
@@ -15,8 +19,9 @@ if (typeof Swiper !== 'undefined') {
         spaceBetween: 30,
         loop: true,
         effect: "fade",
+        fadeEffect: { crossFade: true },
         autoplay: {
-            delay: 8000,
+            delay: 9000,
             disableOnInteraction: false
         },
         navigation: {

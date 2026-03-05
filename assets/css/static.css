@@ -74,6 +74,8 @@
 
 /*products*/
 .productSwiper{background: linear-gradient(to bottom, #1a1a1a 0%, #000000 100%);}
+.productSwiper .swiper-slide{pointer-events: none;}
+.productSwiper .swiper-slide-active{pointer-events: auto;}
 .productContent{display: flex;color: var(--yellow);padding: 140px 0 120px;width: 100%;align-items: center;justify-content: space-between;}
 .productTitle > span{font-size: 33px;line-height: 1em;font-weight: 100;}
 .productTitle > h3{font-size: 60px;line-height: 1.2em;font-weight: 500;margin: 5px 0 75px;text-transform: uppercase;}
