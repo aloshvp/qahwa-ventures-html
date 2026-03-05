@@ -87,8 +87,8 @@
     .footerLogoSec{flex-direction: column;align-items: flex-start;}
     .qahwaVenturesLogo > img{max-width: 90px;}
     .footerContactSec h4{margin-bottom: 15px;}
-    .officialPartnerImgSec{gap: 35px;flex-direction: row;}
-    .officialPartnerImgSec  >img{max-width: 100px;}
+    .officialPartnerImgSec{gap: 35px;}
+    .officialPartnerImgSec img{max-width: 160px;}
     .socialMediaLinks{margin-top: 15px;}
     .phoneSec{gap: 15px;}
     .footerLinkNav>li>a{margin-bottom: 15px;}
