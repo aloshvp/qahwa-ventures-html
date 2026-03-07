@@ -29,8 +29,8 @@
 
     .insightsUpdatesDetailsWrap{padding:120px 0}
     .insightsUpdatesDetailsBody{flex-direction:column}
-    .insightsUpdatesDetailsLftCont{border-right:none;padding-right:0}
-    .insightsUpdatesDetailsRghtCont{padding-left:0}
+    .insightsUpdatesDetailsLftCont{border-right:none;padding-right:0;width:100%}
+    .insightsUpdatesDetailsRghtCont{padding-left:0;width:100%}
     .blogPostContentHead>h1{max-width:100%}
     .blogPostShareSec{margin:40px 0}
     .recentPostsWrap{gap:20px}

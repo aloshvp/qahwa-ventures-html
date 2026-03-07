@@ -104,8 +104,8 @@ html{scroll-behavior:smooth}
 
   .insightsUpdatesDetailsWrap{padding:160px 0;background-color: #000;color: #d8d8d8;}
   .insightsUpdatesDetailsBody{display:flex}
-  .insightsUpdatesDetailsLftCont{border-right:1px solid #181818;padding-right:40px;flex:80%}
-  .insightsUpdatesDetailsRghtCont{padding-left:40px}
+  .insightsUpdatesDetailsLftCont{border-right:1px solid #181818;padding-right:40px;width:70%}
+  .insightsUpdatesDetailsRghtCont{padding-left:40px;width: 30%}
   .insightsUpdatesDetailsRghtCont>h3{font-size:22px;line-height:1em;margin-bottom:30px;font-family:var(--medium);color:#d8d8d8}
   .recentPostsWrap{display:flex;flex-direction:column;gap:30px;position:sticky;top:150px}
   .recentPostsitem{display:flex;gap:20px;border-bottom:1px solid #181818;padding-bottom:30px;align-items:center;cursor:pointer}
